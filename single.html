@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Future of Web Development: Trends to Watch in 2025 | Codevani Blog</title>
+    <meta
+      name="description"
+      content="Explore the latest trends shaping the web development landscape in 2025, from AI-powered tools to progressive web apps, serverless architecture, and WebAssembly."
+    />
+    <meta name="keywords" content="web development, 2025 trends, AI tools, progressive web apps, WebAssembly, serverless, React, Vue, Angular" />
+    <meta name="author" content="Amit Patel" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="The Future of Web Development: Trends to Watch in 2025" />
+    <meta property="og:description" content="Explore the latest trends shaping the web development landscape in 2025" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://codevani.com/blog/future-of-web-development-2025" />
+    <meta property="og:image" content="https://codevani.com/images/blog/web-dev-2025.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Future of Web Development: Trends to Watch in 2025" />
+    <meta name="twitter:description" content="Explore the latest trends shaping the web development landscape in 2025" />
+    <link rel="canonical" href="https://codevani.com/blog/future-of-web-development-2025" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "The Future of Web Development: Trends to Watch in 2025",
+      "description": "Explore the latest trends shaping the web development landscape in 2025",
+      "image": "https://codevani.com/images/blog/web-dev-2025.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Amit Patel"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Codevani",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://codevani.com/logo.png"
+        }
+      },
+      "datePublished": "2025-10-12",
+      "dateModified": "2025-10-12"
+    }
+    </script>
+       <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+      * {
+        font-family: "Inter", sans-serif;
+      }
+
+      .gradient-text {
+        background: linear-gradient(
+          135deg,
+          #fbbf77 0%,
+          #c084fc 50%,
+          #a78bfa 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .service-card {
+        transition: all 0.3s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+      }
+
+      .nav-item {
+        transition: all 0.3s ease;
+      }
+
+      .nav-item.active {
+        color: #fbbf77;
+      }
+
+      .nav-item:hover {
+        color: #c084fc;
+        transform: translateY(-5px);
+      }
+
+      .pb-safe {
+        padding-bottom: 80px;
+      }
+
+      @media (min-width: 768px) {
+        .pb-safe {
+          padding-bottom: 0;
+        }
+
+        .bottom-nav {
+          position: relative;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Reading Progress Bar -->
+    <div id="progressBar" class="progress-bar" style="width: 0%"></div>
+
+    <!-- Top Navigation for Desktop -->
+    <nav
+      class="hidden md:flex fixed top-4 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-3xl"
+    >
+      <div
+        class="w-full bg-zinc-900/95 backdrop-blur-md rounded-full px-8 py-3 border border-zinc-800 shadow-2xl"
+      >
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <div class="text-2xl font-bold">
+              <span class="gradient-text">Codevani</span>
+            </div>
+          </div>
+          <div class="flex gap-10 items-center">
+            <a
+              href="index.html"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >Home</a
+            >
+            <a
+              href="projects.html"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >Projects</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >About</a
+            >
+            <a
+              href="blog.html"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >Blog</a
+            >
+
+            <a
+              href="contact.html"
+              class="bg-white text-black px-6 py-2 rounded-full font-medium text-sm hover:bg-gray-200 transition"
+            >
+              Let’s Talk
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile Header -->
+    <div class="md:hidden fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+      <div class="flex items-center justify-between px-4 py-4">
+        <div class="text-xl font-bold">
+          <span class="gradient-text">Codevani</span>
+        </div>
+        <a href="blog.html" class="back-button text-gray-600 hover:text-gray-900 transition">
+          <i class="fas fa-arrow-left text-xl"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Article Header -->
+    <header class="pt-32 md:pt-28 pb-12 px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex flex-wrap gap-3 mb-6">
+          <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">
+            Web Development
+          </span>
+          <span class="bg-gray-100 text-gray-600 px-4 py-2 rounded-full text-sm">
+            <i class="far fa-clock mr-1"></i> 10 min read
+          </span>
+          <span class="bg-gray-100 text-gray-600 px-4 py-2 rounded-full text-sm">
+            <i class="far fa-calendar mr-1"></i> October 12, 2025
+          </span>
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          The Future of Web Development: Trends to Watch in 2025
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-gray-600 mb-8">
+          Explore the latest trends shaping the web development landscape, from AI-powered tools to progressive web apps and beyond.
+        </p>
+
+        <!-- Author Info -->
+        <div class="flex items-center gap-4 mb-8 pb-8 border-b border-gray-200">
+          <div class="w-16 h-16 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center">
+            <i class="fas fa-user text-white text-xl"></i>
+          </div>
+          <div>
+            <p class="font-semibold text-lg">Amit Patel</p>
+            <p class="text-gray-600">Senior Web Developer at Codevani</p>
+          </div>
+        </div>
+
+        <!-- Share Buttons -->
+        <div class="flex flex-wrap gap-3">
+          <button class="share-button bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+            <i class="fab fa-facebook mr-2"></i> Share
+          </button>
+          <button class="share-button bg-sky-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-sky-600 transition">
+            <i class="fab fa-twitter mr-2"></i> Tweet
+          </button>
+          <button class="share-button bg-blue-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition">
+            <i class="fab fa-linkedin mr-2"></i> Share
+          </button>
+          <button class="share-button bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition">
+            <i class="fas fa-link mr-2"></i> Copy Link
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Featured Image -->
+    <section class="px-4 mb-12">
+      <div class="max-w-6xl mx-auto">
+        <div class="rounded-3xl overflow-hidden shadow-custom">
+          <div class="h-96 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
+            <i class="fas fa-code text-9xl text-white/30"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <article class="px-4 pb-20">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <!-- Table of Contents (Desktop) -->
+          <aside class="hidden lg:block lg:col-span-3">
+            <div class="sticky-toc bg-gray-50 rounded-2xl p-6 border border-gray-200">
+              <h3 class="font-bold text-lg mb-4 text-gray-900">Table of Contents</h3>
+              <nav>
+                <ul class="space-y-2">
+                  <li><a href="#intro" class="toc-item block py-2 text-gray-600 hover:text-purple-600 transition rounded">Introduction</a></li>
+                  <li><a href="#ai-tools" class="toc-item block py-2 text-gray-600 hover:text-purple-600 transition rounded">AI-Powered Development</a></li>
+                  <li><a href="#pwa" class="toc-item block py-2 text-gray-600 hover:text-purple-600 transition rounded">Progressive Web Apps</a></li>
+                  <li><a href="#webassembly" class="toc-item block py-2 text-gray-600 hover:text-purple-600 transition rounded">WebAssembly</a></li>
+                  <li><a href="#serverless" class="toc-item block py-2 text-gray-600 hover:text-purple-600 transition rounded">Serverless Architecture</a></li>
+                  <li><a href="#frameworks" class="toc-item block py-2 text-gray-600 hover:text-purple-600 transition rounded">Modern Frameworks</a></li>
+                  <li><a href="#conclusion" class="toc-item block py-2 text-gray-600 hover:text-purple-600 transition rounded">Conclusion</a></li>
+                </ul>
+              </nav>
+            </div>
+          </aside>
+
+          <!-- Article Content -->
+          <div class="lg:col-span-9">
+            <div class="max-w-4xl article-content">
+              <section id="intro">
+                <p class="text-xl text-gray-700 font-medium mb-6">
+                  The web development landscape is evolving at an unprecedented pace. As we navigate through 2025, developers and businesses must stay ahead of emerging trends to remain competitive and deliver exceptional digital experiences.
+                </p>
+
+                <p>
+                  In this comprehensive guide, we'll explore the most significant trends that are reshaping how we build, deploy, and maintain web applications. From artificial intelligence integration to cutting-edge performance optimization techniques, these developments are not just changing the tools we use—they're transforming the entire approach to web development.
+                </p>
+              </section>
+
+              <section id="ai-tools">
+                <h2>1. AI-Powered Development Tools</h2>
+                
+                <p>
+                  Artificial intelligence has moved from buzzword to practical reality in web development. AI-powered coding assistants and development tools are revolutionizing how developers write, test, and debug code.
+                </p>
+
+                <h3>Key Benefits of AI in Development</h3>
+                <ul>
+                  <li><strong>Code Generation:</strong> AI tools can generate boilerplate code, suggest completions, and even write entire functions based on natural language descriptions.</li>
+                  <li><strong>Bug Detection:</strong> Advanced machine learning algorithms can identify potential bugs and security vulnerabilities before they reach production.</li>
+                  <li><strong>Code Optimization:</strong> AI can analyze your codebase and suggest performance improvements and refactoring opportunities.</li>
+                  <li><strong>Documentation:</strong> Automated documentation generation saves time and ensures consistency across your project.</li>
+                </ul>
+
+                <blockquote>
+                  "AI isn't replacing developers—it's empowering them to focus on creative problem-solving while handling repetitive tasks automatically." - Industry Expert
+                </blockquote>
+              </section>
+
+              <section id="pwa">
+                <h2>2. Progressive Web Apps (PWAs) Go Mainstream</h2>
+                
+                <p>
+                  Progressive Web Apps continue to bridge the gap between web and native applications. In 2025, PWAs have become the go-to solution for businesses wanting to provide app-like experiences without the overhead of maintaining separate native applications.
+                </p>
+
+                <h3>Why PWAs Are Winning</h3>
+                <ul>
+                  <li>Cross-platform compatibility with a single codebase</li>
+                  <li>Offline functionality through service workers</li>
+                  <li>Push notifications for better user engagement</li>
+                  <li>Improved performance with advanced caching strategies</li>
+                  <li>Lower development and maintenance costs</li>
+                </ul>
+
+                <p>
+                  Major companies have reported significant increases in user engagement and conversion rates after implementing PWA technology. The ability to install web apps directly from the browser has made distribution easier than ever.
+                </p>
+              </section>
+
+              <section id="webassembly">
+                <h2>3. WebAssembly: Unleashing Near-Native Performance</h2>
+                
+                <p>
+                  WebAssembly (Wasm) has matured into a production-ready technology that enables near-native performance for web applications. This low-level bytecode format allows developers to run code written in languages like C++, Rust, and Go directly in the browser.
+                </p>
+
+                <h3>Use Cases for WebAssembly</h3>
+                <ul>
+                  <li><strong>Gaming:</strong> Complex 3D games running smoothly in browsers without plugins</li>
+                  <li><strong>Video Editing:</strong> Browser-based video editing tools with desktop-level performance</li>
+                  <li><strong>CAD Applications:</strong> Engineering and design software accessible through web browsers</li>
+                  <li><strong>Scientific Computing:</strong> Data analysis and visualization tools with computational intensity</li>
+                </ul>
+              </section>
+
+              <section id="serverless">
+                <h2>4. Serverless Architecture and Edge Computing</h2>
+                
+                <p>
+                  The serverless paradigm continues to gain traction, with edge computing adding another layer of optimization. By executing code closer to users, applications achieve lower latency and better performance globally.
+                </p>
+
+                <h3>Advantages of Serverless</h3>
+                <ul>
+                  <li>Automatic scaling based on demand</li>
+                  <li>Pay-per-use pricing model reduces costs</li>
+                  <li>Reduced operational complexity</li>
+                  <li>Faster time to market</li>
+                  <li>Built-in high availability</li>
+                </ul>
+
+                <p>
+                  Edge computing platforms are enabling developers to deploy functions at the network edge, ensuring users experience minimal latency regardless of their geographical location.
+                </p>
+              </section>
+
+              <section id="frameworks">
+                <h2>5. Evolution of Modern JavaScript Frameworks</h2>
+                
+                <p>
+                  The JavaScript framework ecosystem continues to evolve, with established players like React, Vue, and Angular introducing significant improvements while new contenders emerge with innovative approaches.
+                </p>
+
+                <h3>Framework Trends in 2025</h3>
+                <ul>
+                  <li><strong>React:</strong> Server components and improved concurrent rendering capabilities</li>
+                  <li><strong>Vue:</strong> Enhanced composition API and better TypeScript integration</li>
+                  <li><strong>Svelte:</strong> Growing adoption due to compile-time optimization</li>
+                  <li><strong>Next.js & Nuxt:</strong> Advanced meta-frameworks with built-in optimizations</li>
+                </ul>
+
+                <p>
+                  The focus has shifted from just building fast applications to creating better developer experiences with improved tooling, debugging capabilities, and comprehensive documentation.
+                </p>
+              </section>
+
+              <section id="conclusion">
+                <h2>Conclusion: Embracing the Future</h2>
+                
+                <p>
+                  The web development landscape of 2025 is characterized by increased automation, better performance, and more sophisticated tooling. Developers who embrace these trends will be well-positioned to build the next generation of web applications.
+                </p>
+
+                <p>
+                  As we look ahead, the key to success lies not just in adopting new technologies, but in understanding how they fit into your specific use cases and business objectives. The future of web development is bright, and these trends are just the beginning of what's possible.
+                </p>
+
+                <p class="text-lg font-medium text-gray-900 mt-8">
+                  What trends are you most excited about? Share your thoughts in the comments below!
+                </p>
+              </section>
+
+              <!-- Tags -->
+              <div class="mt-12 pt-8 border-t border-gray-200">
+                <h3 class="font-bold text-lg mb-4">Tags</h3>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#WebDevelopment</span>
+                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#AI</span>
+                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#PWA</span>
+                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#WebAssembly</span>
+                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#Serverless</span>
+                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#JavaScript</span>
+                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#React</span>
+                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#Vue</span>
+                </div>
+              </div>
+
+              <!-- Author Bio -->
+              <div class="mt-12 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-100">
+                <div class="flex items-start gap-6">
+                  <div class="w-20 h-20 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-user text-white text-2xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-xl mb-2">About Amit Patel</h3>
+                    <p class="text-gray-600 mb-4">
+                      Amit is a Senior Web Developer at Codevani with over 10 years of experience in building scalable web applications. He specializes in modern JavaScript frameworks and cloud architecture, and is passionate about sharing knowledge with the developer community.
+                    </p>
+                    <div class="flex gap-3">
+                      <a href="#" class="text-gray-600 hover:text-purple-600 transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                      </a>
+                      <a href="#" class="text-gray-600 hover:text-purple-600 transition">
+                        <i class="fab fa-linkedin text-xl"></i>
+                      </a>
+                      <a href="#" class="text-gray-600 hover:text-purple-600 transition">
+                        <i class="fab fa-github text-xl"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Related Articles -->
+    <section class="py-16 px-4 bg-gray-50">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8">
+          Related <span class="gradient-text">Articles</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Related Post 1 -->
+          <article class="related-card bg-white rounded-2xl overflow-hidden shadow-custom border border-gray-100">
+            <div class="h-48 bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center">
+              <i class="fas fa-mobile-alt text-5xl text-white/30"></i>
+            </div>
+            <div class="p-6">
+              <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-medium">Mobile Apps</span>
+              <h3 class="text-xl font-bold mt-3 mb-2">Building Cross-Platform Apps with React Native</h3>
+              <p class="text-gray-600 text-sm mb-4">Learn how to create stunning mobile applications that work seamlessly on both iOS and Android...</p>
+              <a href="#" class="text-purple-600 hover:text-purple-700 font-medium text-sm inline-flex items-center gap-2">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Related Post 2 -->
+          <article class="related-card bg-white rounded-2xl overflow-hidden shadow-custom border border-gray-100">
+            <div class="h-48 bg-gradient-to-br from-green-600 to-teal-600 flex items-center justify-center">
+              <i class="fas fa-paint-brush text-5xl text-white/30"></i>
+            </div>
+            <div class="p-6">
+              <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-medium">UI/UX Design</span>
+              <h3 class="text-xl font-bold mt-3 mb-2">Design Systems That Scale: Best Practices</h3>
+              <p class="text-gray-600 text-sm mb-4">Discover how to build and maintain design systems that grow with your product and team...</p>
+              <a href="#" class="text-purple-600 hover:text-purple-700 font-medium text-sm inline-flex items-center gap-2">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Related Post 3 -->
+          <article class="related-card bg-white rounded-2xl overflow-hidden shadow-custom border border-gray-100">
+            <div class="h-48 bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center">
+              <i class="fas fa-code text-5xl text-white/30"></i>
+            </div>
+            <div class="p-6">
+              <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-medium">Web Development</span>
+              <h3 class="text-xl font-bold mt-3 mb-2">Mastering Modern JavaScript Frameworks</h3>
+              <p class="text-gray-600 text-sm mb-4">A comprehensive guide to choosing and mastering the right JavaScript framework...</p>
+              <a href="#" class="text-purple-600 hover:text-purple-700 font-medium text-sm inline-flex items-center gap-2">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+     <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8 px-4 pb-24 md:pb-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <div class="text-2xl font-bold mb-4">
+              <span class="gradient-text">Codevani</span>
+            </div>
+            <p class="text-gray-400">
+              Creating digital experiences that matter
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Services</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-purple-400 transition"
+                  >Web Development</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-purple-400 transition"
+                  >Mobile Apps</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-purple-400 transition"
+                  >UI/UX Design</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Company</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-purple-400 transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-purple-400 transition">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-purple-400 transition">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Follow Us</h4>
+            <div class="flex gap-4">
+              <a href="#" class="text-2xl hover:text-purple-400 transition"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-2xl hover:text-purple-400 transition"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-2xl hover:text-purple-400 transition"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-2xl hover:text-purple-400 transition"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-gray-400 pt-8 border-t border-gray-800">
+          <p>&copy; 2025 RWT Creative Agency. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="bottom-nav md:hidden glass-effect border-t border-gray-800">
+      <div class="flex justify-around items-center py-4 px-2">
+        <a
+          href="index.html"
+          class="nav-item active flex flex-col items-center gap-1"
+        >
+          <i class="fas fa-home text-xl"></i>
+          <span class="text-xs">Home</span>
+        </a>
+        <a href="projects.html" class="nav-item flex flex-col items-center gap-1">
+         <i class="fa-solid fa-layer-group text-xl"></i>
+          <span class="text-xs">Projects</span>
+        </a>
+        <a href="about.html" class="nav-item flex flex-col items-center gap-1">
+          <i class="fa-solid fa-question text-xl"></i>
+          <span class="text-xs">About</span>
+        </a>
+        <a href="blog.html" class="nav-item flex flex-col items-center gap-1">
+         <i class="fa-solid fa-book text-xl"></i>
+          <span class="text-xs">Blog</span>
+        </a>
+        <a href="contact.html" class="nav-item flex flex-col items-center gap-1">
+         <i class="fa-solid fa-phone text-xl"></i>
+          <span class="text-xs">Contact</span>
+        </a>
+      </div>
+    </nav>
+
+    <script>
+      // Bottom navigation active state
+      const navItems = document.querySelectorAll(".nav-item");
+      const sections = document.querySelectorAll("section");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navItems.forEach((item) => {
+          item.classList.remove("active");
+          if (item.getAttribute("href") === `#${current}`) {
+            item.classList.add("active");
+          }
+        });
+      });
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+

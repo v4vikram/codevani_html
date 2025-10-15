@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Projects | Codevani - Showcasing Excellence in Digital Solutions</title>
+    <meta
+      name="description"
+      content="Explore Codevani's portfolio of successful web development, mobile apps, and digital transformation projects. See how we've helped businesses achieve their goals."
+    />
+    <meta name="keywords" content="web development projects, mobile app portfolio, UI/UX design showcase, digital solutions, case studies" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Our Projects | Codevani Portfolio" />
+    <meta property="og:description" content="Explore our portfolio of successful digital projects and transformations" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://codevani.com/projects" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+      * {
+        font-family: "Inter", sans-serif;
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #fbbf77 0%, #c084fc 50%, #a78bfa 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .project-card {
+        transition: all 0.4s ease;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .project-card:hover {
+        transform: translateY(-10px);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .project-card:hover .project-image {
+        transform: scale(1.1);
+      }
+
+      .project-card:hover .project-overlay {
+        opacity: 1;
+      }
+
+      .project-image {
+        transition: transform 0.5s ease;
+      }
+
+      .project-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(251, 191, 119, 0.9) 0%, rgba(192, 132, 252, 0.9) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+
+      .filter-btn {
+        transition: all 0.3s ease;
+      }
+
+      .filter-btn.active {
+        background: linear-gradient(135deg, #fbbf77 0%, #c084fc 100%);
+      }
+
+      .filter-btn:hover {
+        transform: scale(1.05);
+      }
+
+      .back-button {
+        transition: all 0.3s ease;
+      }
+
+      .back-button:hover {
+        transform: translateX(-5px);
+      }
+
+      .stats-card {
+        transition: all 0.3s ease;
+      }
+
+      .stats-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .pb-safe {
+        padding-bottom: 80px;
+      }
+
+      @media (min-width: 768px) {
+        .pb-safe {
+          padding-bottom: 0;
+        }
+      }
+
+      .featured-badge {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10;
+      }
+
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: rgba(192, 132, 252, 0.3);
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(192, 132, 252, 0.5);
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white overflow-x-hidden">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+      * {
+        font-family: "Inter", sans-serif;
+      }
+
+      .gradient-text {
+        background: linear-gradient(
+          135deg,
+          #fbbf77 0%,
+          #c084fc 50%,
+          #a78bfa 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .service-card {
+        transition: all 0.3s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+      }
+
+      .nav-item {
+        transition: all 0.3s ease;
+      }
+
+      .nav-item.active {
+        color: #fbbf77;
+      }
+
+      .nav-item:hover {
+        color: #c084fc;
+        transform: translateY(-5px);
+      }
+
+      .pb-safe {
+        padding-bottom: 80px;
+      }
+
+      @media (min-width: 768px) {
+        .pb-safe {
+          padding-bottom: 0;
+        }
+
+        .bottom-nav {
+          position: relative;
+        }
+      }
+    </style>
+
+    <!-- Mobile Header -->
+    <div class="md:hidden fixed top-0 left-0 right-0 z-50 bg-zinc-900/95 backdrop-blur-md border-b border-zinc-800">
+      <div class="flex items-center justify-between px-4 py-4">
+        <div class="text-xl font-bold">
+          <span class="gradient-text">Codevani</span>
+        </div>
+        <a href="index.html" class="back-button text-gray-400 hover:text-white transition">
+          <i class="fas fa-arrow-left text-xl"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="min-h-[60vh] flex items-center justify-center px-4 pt-32 md:pt-24 pb-safe">
+      <div class="max-w-6xl mx-auto text-center">
+        <div class="mb-8 animate-float">
+          <div class="inline-block glass-effect rounded-3xl p-8">
+            <i class="fas fa-folder-open text-6xl gradient-text"></i>
+          </div>
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6">
+          Our <span class="gradient-text">Projects</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-8">
+          Discover how we've transformed ideas into powerful digital solutions that drive business growth
+        </p>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="stats-card glass-effect rounded-2xl p-6 text-center">
+            <div class="text-4xl font-bold gradient-text mb-2">150+</div>
+            <div class="text-gray-400">Projects Completed</div>
+          </div>
+          <div class="stats-card glass-effect rounded-2xl p-6 text-center">
+            <div class="text-4xl font-bold gradient-text mb-2">120+</div>
+            <div class="text-gray-400">Happy Clients</div>
+          </div>
+          <div class="stats-card glass-effect rounded-2xl p-6 text-center">
+            <div class="text-4xl font-bold gradient-text mb-2">98%</div>
+            <div class="text-gray-400">Success Rate</div>
+          </div>
+          <div class="stats-card glass-effect rounded-2xl p-6 text-center">
+            <div class="text-4xl font-bold gradient-text mb-2">15+</div>
+            <div class="text-gray-400">Industries Served</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-12 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-wrap gap-3 justify-center">
+          <button class="filter-btn active glass-effect px-6 py-3 rounded-full font-medium hover:text-white transition">
+            All Projects
+          </button>
+          <button class="filter-btn glass-effect px-6 py-3 rounded-full font-medium hover:text-white transition">
+            Web Development
+          </button>
+          <button class="filter-btn glass-effect px-6 py-3 rounded-full font-medium hover:text-white transition">
+            Mobile Apps
+          </button>
+          <button class="filter-btn glass-effect px-6 py-3 rounded-full font-medium hover:text-white transition">
+            UI/UX Design
+          </button>
+          <button class="filter-btn glass-effect px-6 py-3 rounded-full font-medium hover:text-white transition">
+            E-commerce
+          </button>
+          <button class="filter-btn glass-effect px-6 py-3 rounded-full font-medium hover:text-white transition">
+            SaaS
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Project -->
+    <section class="py-12 px-4 pb-safe">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8">
+          Featured <span class="gradient-text">Project</span>
+        </h2>
+        
+        <div class="project-card glass-effect rounded-3xl overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+            <div class="h-80 lg:h-auto bg-gradient-to-br from-purple-600 via-pink-600 to-orange-600 flex items-center justify-center overflow-hidden relative">
+              <div class="project-image w-full h-full flex items-center justify-center">
+                <i class="fas fa-shopping-cart text-8xl text-white/30"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i class="fas fa-external-link-alt text-5xl text-white mb-4"></i>
+                  <p class="text-white font-semibold text-xl">View Project</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-8 lg:p-12 flex flex-col justify-center">
+              <div class="flex gap-3 mb-4 flex-wrap">
+                <span class="glass-effect px-4 py-2 rounded-full text-sm text-purple-400">
+                  E-commerce
+                </span>
+                <span class="glass-effect px-4 py-2 rounded-full text-sm text-purple-400">
+                  Web Development
+                </span>
+                <span class="glass-effect px-4 py-2 rounded-full text-sm text-orange-400">
+                  Featured
+                </span>
+              </div>
+              <h3 class="text-3xl font-bold mb-4">
+                ShopHub - Modern E-commerce Platform
+              </h3>
+              <p class="text-gray-400 mb-6 text-lg">
+                A comprehensive e-commerce solution with advanced inventory management, real-time analytics, and seamless payment integration. Built with React and Node.js, serving 50K+ daily active users.
+              </p>
+              <div class="mb-6">
+                <h4 class="font-semibold mb-3 text-white">Key Features:</h4>
+                <ul class="space-y-2 text-gray-400">
+                  <li><i class="fas fa-check text-purple-400 mr-2"></i> Real-time inventory tracking</li>
+                  <li><i class="fas fa-check text-purple-400 mr-2"></i> Multi-vendor marketplace</li>
+                  <li><i class="fas fa-check text-purple-400 mr-2"></i> AI-powered recommendations</li>
+                  <li><i class="fas fa-check text-purple-400 mr-2"></i> Mobile-first responsive design</li>
+                </ul>
+              </div>
+              <div class="flex flex-wrap gap-4">
+                <a href="#" class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-400 to-purple-500 px-6 py-3 rounded-full font-semibold hover:shadow-lg transition">
+                  View Case Study
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#" class="inline-flex items-center gap-2 glass-effect px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition">
+                  Live Demo
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="py-12 px-4 pb-safe">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8">
+          All <span class="gradient-text">Projects</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Project 1 -->
+          <article class="project-card glass-effect rounded-3xl overflow-hidden relative">
+            <div class="featured-badge">
+              <span class="glass-effect px-3 py-1 rounded-full text-xs text-orange-400 font-medium">
+                <i class="fas fa-star mr-1"></i> Popular
+              </span>
+            </div>
+            <div class="h-64 bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center overflow-hidden relative">
+              <div class="project-image w-full h-full flex items-center justify-center">
+                <i class="fas fa-heartbeat text-7xl text-white/30"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i class="fas fa-search-plus text-4xl text-white mb-3"></i>
+                  <p class="text-white font-semibold">View Details</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex gap-2 mb-3 flex-wrap">
+                <span class="glass-effect px-3 py-1 rounded-full text-xs text-purple-400">Mobile App</span>
+                <span class="glass-effect px-3 py-1 rounded-full text-xs text-gray-400">Healthcare</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">HealthTrack Pro</h3>
+              <p class="text-gray-400 text-sm mb-4">
+                A comprehensive health monitoring app with real-time vitals tracking, medication reminders, and doctor consultations.
+              </p>
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-2">
+                  <div class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center">
+                    <i class="fas fa-user text-white text-xs"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">FinPay Solutions</span>
+                </div>
+                <span class="text-xs text-gray-500">2023</span>
+              </div>
+              <div class="flex gap-2">
+                <span class="glass-effect px-2 py-1 rounded text-xs">Angular</span>
+                <span class="glass-effect px-2 py-1 rounded text-xs">Java</span>
+                <span class="glass-effect px-2 py-1 rounded text-xs">Oracle</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 8 -->
+          <article class="project-card glass-effect rounded-3xl overflow-hidden">
+            <div class="h-64 bg-gradient-to-br from-emerald-600 to-green-600 flex items-center justify-center overflow-hidden relative">
+              <div class="project-image w-full h-full flex items-center justify-center">
+                <i class="fas fa-comments text-7xl text-white/30"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i class="fas fa-search-plus text-4xl text-white mb-3"></i>
+                  <p class="text-white font-semibold">View Details</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex gap-2 mb-3 flex-wrap">
+                <span class="glass-effect px-3 py-1 rounded-full text-xs text-purple-400">Web App</span>
+                <span class="glass-effect px-3 py-1 rounded-full text-xs text-gray-400">Social Media</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">ConnectHub</h3>
+              <p class="text-gray-400 text-sm mb-4">
+                Social networking platform with real-time messaging, content sharing, and community building features.
+              </p>
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-2">
+                  <div class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center">
+                    <i class="fas fa-user text-white text-xs"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">SocialTech</span>
+                </div>
+                <span class="text-xs text-gray-500">2023</span>
+              </div>
+              <div class="flex gap-2">
+                <span class="glass-effect px-2 py-1 rounded text-xs">React</span>
+                <span class="glass-effect px-2 py-1 rounded text-xs">Socket.io</span>
+                <span class="glass-effect px-2 py-1 rounded text-xs">Redis</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 9 -->
+          <article class="project-card glass-effect rounded-3xl overflow-hidden">
+            <div class="h-64 bg-gradient-to-br from-violet-600 to-purple-600 flex items-center justify-center overflow-hidden relative">
+              <div class="project-image w-full h-full flex items-center justify-center">
+                <i class="fas fa-palette text-7xl text-white/30"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i class="fas fa-search-plus text-4xl text-white mb-3"></i>
+                  <p class="text-white font-semibold">View Details</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex gap-2 mb-3 flex-wrap">
+                <span class="glass-effect px-3 py-1 rounded-full text-xs text-purple-400">UI/UX</span>
+                <span class="glass-effect px-3 py-1 rounded-full text-xs text-gray-400">Design System</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">DesignFlow Studio</h3>
+              <p class="text-gray-400 text-sm mb-4">
+                Comprehensive design system with reusable components, style guides, and documentation for enterprise products.
+              </p>
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-2">
+                  <div class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center">
+                    <i class="fas fa-user text-white text-xs"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">Enterprise Corp</span>
+                </div>
+                <span class="text-xs text-gray-500">2023</span>
+              </div>
+              <div class="flex gap-2">
+                <span class="glass-effect px-2 py-1 rounded text-xs">Figma</span>
+                <span class="glass-effect px-2 py-1 rounded text-xs">Storybook</span>
+                <span class="glass-effect px-2 py-1 rounded text-xs">React</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="text-center mt-12">
+          <button class="glass-effect px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition">
+            <i class="fas fa-sync-alt mr-2"></i> Load More Projects
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 pb-safe">
+      <div class="max-w-4xl mx-auto">
+        <div class="glass-effect rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10"></div>
+          <div class="relative z-10">
+            <div class="inline-block glass-effect rounded-3xl p-6 mb-6 animate-float">
+              <i class="fas fa-rocket text-4xl gradient-text"></i>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Ready to Start Your <span class="gradient-text">Project?</span>
+            </h2>
+            <p class="text-lg mb-8 text-gray-400 max-w-2xl mx-auto">
+              Let's collaborate to bring your vision to life. Our team of experts is ready to transform your ideas into powerful digital solutions.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+              <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-400 to-purple-500 px-8 py-4 rounded-full font-semibold hover:shadow-lg transition text-lg">
+                Get Started
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="contact.html" class="inline-flex items-center gap-2 glass-effect px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition text-lg">
+                Schedule a Call
+                <i class="fas fa-phone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-4 text-center">
+          What Our <span class="gradient-text">Clients Say</span>
+        </h2>
+        <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+          Don't just take our word for it - hear from clients who've experienced the Codevani difference
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Testimonial 1 -->
+          <div class="glass-effect rounded-2xl p-6">
+            <div class="flex gap-1 mb-4">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-gray-400 mb-4">
+              "Codevani transformed our outdated platform into a modern, user-friendly solution. The team's expertise and dedication exceeded our expectations."
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center">
+                <i class="fas fa-user text-white"></i>
+              </div>
+              <div>
+                <p class="font-semibold">Rajesh Kumar</p>
+                <p class="text-sm text-gray-500">CEO, TechStart</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="glass-effect rounded-2xl p-6">
+            <div class="flex gap-1 mb-4">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-gray-400 mb-4">
+              "The mobile app they developed has been a game-changer for our business. User engagement increased by 300% within the first month!"
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center">
+                <i class="fas fa-user text-white"></i>
+              </div>
+              <div>
+                <p class="font-semibold">Priya Sharma</p>
+                <p class="text-sm text-gray-500">Founder, ShopEasy</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="glass-effect rounded-2xl p-6">
+            <div class="flex gap-1 mb-4">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+            </div>
+            <p class="text-gray-400 mb-4">
+              "Professional, responsive, and incredibly talented. Codevani delivered our project on time and within budget. Highly recommended!"
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center">
+                <i class="fas fa-user text-white"></i>
+              </div>
+              <div>
+                <p class="font-semibold">Arjun Patel</p>
+                <p class="text-sm text-gray-500">CTO, FinanceHub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8 px-4 pb-24 md:pb-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <div class="text-2xl font-bold mb-4">
+              <span class="gradient-text">Codevani</span>
+            </div>
+            <p class="text-gray-400">
+              Creating digital experiences that matter
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Services</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="index.html#services" class="hover:text-purple-400 transition">Web Development</a>
+              </li>
+              <li>
+                <a href="index.html#services" class="hover:text-purple-400 transition">Mobile Apps</a>
+              </li>
+              <li>
+                <a href="index.html#services" class="hover:text-purple-400 transition">UI/UX Design</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Company</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="about.html" class="hover:text-purple-400 transition">About Us</a>
+              </li>
+              <li>
+                <a href="projects.html" class="hover:text-purple-400 transition">Projects</a>
+              </li>
+              <li>
+                <a href="blog.html" class="hover:text-purple-400 transition">Blog</a>
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-purple-400 transition">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Follow Us</h4>
+            <div class="flex gap-4">
+              <a href="#" class="text-2xl hover:text-purple-400 transition">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="text-2xl hover:text-purple-400 transition">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-2xl hover:text-purple-400 transition">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-2xl hover:text-purple-400 transition">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-gray-400 pt-8 border-t border-gray-800">
+          <p>&copy; 2025 Codevani. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="bottom-nav md:hidden glass-effect border-t border-gray-800">
+      <div class="flex justify-around items-center py-4 px-2">
+        <a
+          href="index.html"
+          class="nav-item active flex flex-col items-center gap-1"
+        >
+          <i class="fas fa-home text-xl"></i>
+          <span class="text-xs">Home</span>
+        </a>
+        <a href="projects.html" class="nav-item flex flex-col items-center gap-1">
+         <i class="fa-solid fa-layer-group text-xl"></i>
+          <span class="text-xs">Projects</span>
+        </a>
+        <a href="about.html" class="nav-item flex flex-col items-center gap-1">
+          <i class="fa-solid fa-question text-xl"></i>
+          <span class="text-xs">About</span>
+        </a>
+        <a href="blog.html" class="nav-item flex flex-col items-center gap-1">
+         <i class="fa-solid fa-book text-xl"></i>
+          <span class="text-xs">Blog</span>
+        </a>
+        <a href="contact.html" class="nav-item flex flex-col items-center gap-1">
+         <i class="fa-solid fa-phone text-xl"></i>
+          <span class="text-xs">Contact</span>
+        </a>
+      </div>
+    </nav>
+
+
+    <script>
+      // Filter functionality
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html> 

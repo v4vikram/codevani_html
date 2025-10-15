@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Codevani</title>
+    <meta
+      name="description"
+      content="Learn about Codevani - your trusted partner for web development, mobile apps, and digital solutions."
+    />
+    <meta name="robots" content="index, follow" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+      <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+      * {
+        font-family: "Inter", sans-serif;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      html, body{
+        width: 100%;
+        height: 100%;
+      }
+      /* body{
+        overflow-x: hidden;
+      } */
+
+      .gradient-text {
+        background: linear-gradient(
+          135deg,
+          #fbbf77 0%,
+          #c084fc 50%,
+          #a78bfa 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .service-card {
+        transition: all 0.3s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        width: 100%;
+      }
+
+      .nav-item {
+        transition: all 0.3s ease;
+      }
+
+      .nav-item.active {
+        color: #fbbf77;
+      }
+
+      .nav-item:hover {
+        color: #c084fc;
+        transform: translateY(-5px);
+      }
+
+      .pb-safe {
+        padding-bottom: 80px;
+      }
+
+      @media (min-width: 768px) {
+        .pb-safe {
+          padding-bottom: 0;
+        }
+
+        .bottom-nav {
+          position: relative;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white overflow-x-hidden">
+    <!-- Top Navigation for Desktop -->
+    <nav
+      class="hidden md:flex fixed top-4 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-3xl"
+    >
+      <div
+        class="w-full bg-zinc-900/95 backdrop-blur-md rounded-full px-8 py-3 border border-zinc-800 shadow-2xl"
+      >
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <div class="text-2xl font-bold">
+              <span class="gradient-text">Codevani</span>
+            </div>
+          </div>
+          <div class="flex gap-10 items-center">
+            <a
+              href="index.html"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >Home</a
+            >
+            <a
+              href="projects.html"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >Projects</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >About</a
+            >
+            <a
+              href="blog.html"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >Blog</a
+            >
+
+            <a
+              href="contact.html"
+              class="bg-white text-black px-6 py-2 rounded-full font-medium text-sm hover:bg-gray-200 transition"
+            >
+              Let’s Talk
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Header -->
+    <div
+      class="md:hidden fixed top-0 left-0 right-0 z-50 bg-zinc-900/95 backdrop-blur-md border-b border-zinc-800"
+    >
+      <div class="flex items-center justify-between px-4 py-4">
+        <div class="text-xl font-bold">
+          <span class="gradient-text">Codevani</span>
+        </div>
+        <a
+          href="index.html"
+          class="back-button text-gray-400 hover:text-white transition"
+        >
+          <i class="fas fa-arrow-left text-xl"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      class="min-h-screen flex items-center justify-center px-4 pt-32 md:pt-24 pb-safe"
+    >
+      <div class="max-w-6xl mx-auto text-center">
+        <div class="mb-8 animate-float">
+          <div class="inline-block glass-effect rounded-3xl p-8">
+            <i class="fas fa-users text-6xl gradient-text"></i>
+          </div>
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6">
+          About <span class="gradient-text">Codevani</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-12">
+          We're a passionate team of developers, designers, and digital
+          strategists dedicated to transforming ideas into exceptional digital
+          experiences.
+        </p>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="glass-effect rounded-2xl p-6">
+            <div class="text-4xl font-bold gradient-text">500+</div>
+            <div class="text-gray-400 mt-2">Projects Done</div>
+          </div>
+          <div class="glass-effect rounded-2xl p-6">
+            <div class="text-4xl font-bold gradient-text">250+</div>
+            <div class="text-gray-400 mt-2">Happy Clients</div>
+          </div>
+          <div class="glass-effect rounded-2xl p-6">
+            <div class="text-4xl font-bold gradient-text">50+</div>
+            <div class="text-gray-400 mt-2">Team Members</div>
+          </div>
+          <div class="glass-effect rounded-2xl p-6">
+            <div class="text-4xl font-bold gradient-text">15+</div>
+            <div class="text-gray-400 mt-2">Awards Won</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-20 px-4 pb-safe">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+              Our <span class="gradient-text">Story</span>
+            </h2>
+            <p class="text-gray-400 text-lg mb-6">
+              Founded in 2015, Codevani began with a simple mission: to help
+              businesses thrive in the digital age. What started as a small team
+              of passionate developers has grown into a full-service digital
+              agency.
+            </p>
+            <p class="text-gray-400 text-lg mb-6">
+              Today, we're proud to have served over 250 clients worldwide,
+              delivering cutting-edge solutions that drive real business
+              results. Our commitment to quality, innovation, and client
+              satisfaction remains at the heart of everything we do.
+            </p>
+            <div class="flex gap-4">
+              <div class="glass-effect rounded-2xl p-4 flex-1">
+                <div class="text-2xl font-bold gradient-text mb-1">2015</div>
+                <div class="text-gray-400 text-sm">Founded</div>
+              </div>
+              <div class="glass-effect rounded-2xl p-4 flex-1">
+                <div class="text-2xl font-bold gradient-text mb-1">10+</div>
+                <div class="text-gray-400 text-sm">Years Experience</div>
+              </div>
+              <div class="glass-effect rounded-2xl p-4 flex-1">
+                <div class="text-2xl font-bold gradient-text mb-1">98%</div>
+                <div class="text-gray-400 text-sm">Client Satisfaction</div>
+              </div>
+            </div>
+          </div>
+          <div class="glass-effect rounded-3xl p-8 lg:p-12">
+            <div
+              class="aspect-square bg-gradient-to-br from-orange-400 to-purple-500 rounded-2xl flex items-center justify-center"
+            >
+              <i class="fas fa-rocket text-8xl text-white opacity-20"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="py-20 px-4 pb-safe">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            Our <span class="gradient-text">Values</span>
+          </h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+            The principles that guide our work and define who we are
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="value-card glass-effect rounded-3xl p-8">
+            <div
+              class="w-16 h-16 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-lightbulb text-2xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Innovation</h3>
+            <p class="text-gray-400">
+              We constantly push boundaries and embrace new technologies to
+              deliver cutting-edge solutions.
+            </p>
+          </div>
+
+          <div class="value-card glass-effect rounded-3xl p-8">
+            <div
+              class="w-16 h-16 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-heart text-2xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Quality</h3>
+            <p class="text-gray-400">
+              Excellence in every detail. We take pride in delivering work that
+              exceeds expectations.
+            </p>
+          </div>
+
+          <div class="value-card glass-effect rounded-3xl p-8">
+            <div
+              class="w-16 h-16 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-handshake text-2xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Collaboration</h3>
+            <p class="text-gray-400">
+              We work closely with our clients as partners, ensuring alignment
+              and shared success.
+            </p>
+          </div>
+
+          <div class="value-card glass-effect rounded-3xl p-8">
+            <div
+              class="w-16 h-16 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-shield-alt text-2xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Integrity</h3>
+            <p class="text-gray-400">
+              Honesty and transparency in all our dealings. We build trust
+              through consistent action.
+            </p>
+          </div>
+
+          <div class="value-card glass-effect rounded-3xl p-8">
+            <div
+              class="w-16 h-16 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-chart-line text-2xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Growth</h3>
+            <p class="text-gray-400">
+              Continuous improvement for ourselves and our clients. We never
+              stop learning.
+            </p>
+          </div>
+
+          <div class="value-card glass-effect rounded-3xl p-8">
+            <div
+              class="w-16 h-16 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-smile text-2xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Passion</h3>
+            <p class="text-gray-400">
+              We love what we do. Our enthusiasm drives creativity and
+              exceptional results.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section with Slider -->
+    <section class="py-20 px-4 pb-safe overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            Meet Our <span class="gradient-text">Team</span>
+          </h2>
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+            The talented individuals who bring your ideas to life
+          </p>
+        </div>
+
+        <div class="team-slider">
+          <div class="team-track">
+            <!-- Team Member 1 -->
+            <div class="team-card glass-effect rounded-3xl overflow-hidden">
+              <div
+                class="h-80 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="team-image w-full h-full flex items-center justify-center"
+                >
+                  <i class="fas fa-user text-8xl text-white/30"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-1">Rajesh Kumar</h3>
+                <p class="text-purple-400 mb-3">CEO & Founder</p>
+                <p class="text-gray-400 text-sm mb-4">
+                  Visionary leader with 15+ years in tech industry
+                </p>
+                <div class="team-social flex gap-3">
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-card glass-effect rounded-3xl overflow-hidden">
+              <div
+                class="h-80 bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="team-image w-full h-full flex items-center justify-center"
+                >
+                  <i class="fas fa-user text-8xl text-white/30"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-1">Priya Sharma</h3>
+                <p class="text-purple-400 mb-3">Lead Designer</p>
+                <p class="text-gray-400 text-sm mb-4">
+                  Creative genius specializing in UI/UX design
+                </p>
+                <div class="team-social flex gap-3">
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-dribbble"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-behance"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-card glass-effect rounded-3xl overflow-hidden">
+              <div
+                class="h-80 bg-gradient-to-br from-orange-600 to-red-600 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="team-image w-full h-full flex items-center justify-center"
+                >
+                  <i class="fas fa-user text-8xl text-white/30"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-1">Amit Patel</h3>
+                <p class="text-purple-400 mb-3">Tech Lead</p>
+                <p class="text-gray-400 text-sm mb-4">
+                  Full-stack developer with passion for innovation
+                </p>
+                <div class="team-social flex gap-3">
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-stack-overflow"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="team-card glass-effect rounded-3xl overflow-hidden">
+              <div
+                class="h-80 bg-gradient-to-br from-green-600 to-teal-600 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="team-image w-full h-full flex items-center justify-center"
+                >
+                  <i class="fas fa-user text-8xl text-white/30"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-1">Sneha Reddy</h3>
+                <p class="text-purple-400 mb-3">Marketing Head</p>
+                <p class="text-gray-400 text-sm mb-4">
+                  Digital marketing expert driving growth strategies
+                </p>
+                <div class="team-social flex gap-3">
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 5 -->
+            <div class="team-card glass-effect rounded-3xl overflow-hidden">
+              <div
+                class="h-80 bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="team-image w-full h-full flex items-center justify-center"
+                >
+                  <i class="fas fa-user text-8xl text-white/30"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-1">Vikram Singh</h3>
+                <p class="text-purple-400 mb-3">DevOps Engineer</p>
+                <p class="text-gray-400 text-sm mb-4">
+                  Infrastructure wizard ensuring seamless deployment
+                </p>
+                <div class="team-social flex gap-3">
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-docker"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 6 -->
+            <div class="team-card glass-effect rounded-3xl overflow-hidden">
+              <div
+                class="h-80 bg-gradient-to-br from-pink-600 to-rose-600 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="team-image w-full h-full flex items-center justify-center"
+                >
+                  <i class="fas fa-user text-8xl text-white/30"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-1">Ananya Desai</h3>
+                <p class="text-purple-400 mb-3">Product Manager</p>
+                <p class="text-gray-400 text-sm mb-4">
+                  Strategic thinker bridging tech and business goals
+                </p>
+                <div class="team-social flex gap-3">
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-medium"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Duplicate for seamless loop -->
+            <div class="team-card glass-effect rounded-3xl overflow-hidden">
+              <div
+                class="h-80 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="team-image w-full h-full flex items-center justify-center"
+                >
+                  <i class="fas fa-user text-8xl text-white/30"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-1">Rajesh Kumar</h3>
+                <p class="text-purple-400 mb-3">CEO & Founder</p>
+                <p class="text-gray-400 text-sm mb-4">
+                  Visionary leader with 15+ years in tech industry
+                </p>
+                <div class="team-social flex gap-3">
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card glass-effect rounded-3xl overflow-hidden">
+              <div
+                class="h-80 bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="team-image w-full h-full flex items-center justify-center"
+                >
+                  <i class="fas fa-user text-8xl text-white/30"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-1">Priya Sharma</h3>
+                <p class="text-purple-400 mb-3">Lead Designer</p>
+                <p class="text-gray-400 text-sm mb-4">
+                  Creative genius specializing in UI/UX design
+                </p>
+                <div class="team-social flex gap-3">
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-dribbble"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-behance"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card glass-effect rounded-3xl overflow-hidden">
+              <div
+                class="h-80 bg-gradient-to-br from-orange-600 to-red-600 flex items-center justify-center overflow-hidden"
+              >
+                <div
+                  class="team-image w-full h-full flex items-center justify-center"
+                >
+                  <i class="fas fa-user text-8xl text-white/30"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-1">Amit Patel</h3>
+                <p class="text-purple-400 mb-3">Tech Lead</p>
+                <p class="text-gray-400 text-sm mb-4">
+                  Full-stack developer with passion for innovation
+                </p>
+                <div class="team-social flex gap-3">
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-white/10 transition"
+                  >
+                    <i class="fab fa-stack-overflow"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Call to Action Section -->
+    <section class="py-20 px-4 pb-safe">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="glass-effect rounded-3xl p-12">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            Ready to Work <span class="gradient-text">Together?</span>
+          </h2>
+          <p class="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
+            Let's transform your ideas into reality. Get in touch with us today and start your digital journey.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="contact.html"
+              class="bg-gradient-to-r from-orange-400 to-purple-500 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:shadow-purple-500/50 transition"
+            >
+              Get Started
+            </a>
+            <a
+              href="index.html#work"
+              class="glass-effect px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition"
+            >
+              View Our Work
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+        <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8 px-4 pb-24 md:pb-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <div class="text-2xl font-bold mb-4">
+              <span class="gradient-text">Codevani</span>
+            </div>
+            <p class="text-gray-400">
+              Creating digital experiences that matter
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Services</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-purple-400 transition"
+                  >Web Development</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-purple-400 transition"
+                  >Mobile Apps</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-purple-400 transition"
+                  >UI/UX Design</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Company</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-purple-400 transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-purple-400 transition">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-purple-400 transition">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Follow Us</h4>
+            <div class="flex gap-4">
+              <a href="#" class="text-2xl hover:text-purple-400 transition"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-2xl hover:text-purple-400 transition"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-2xl hover:text-purple-400 transition"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-2xl hover:text-purple-400 transition"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-gray-400 pt-8 border-t border-gray-800">
+          <p>&copy; 2025 RWT Creative Agency. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="bottom-nav md:hidden glass-effect border-t border-gray-800">
+      <div class="flex justify-around items-center py-4 px-2">
+        <a
+          href="index.html"
+          class="nav-item active flex flex-col items-center gap-1"
+        >
+          <i class="fas fa-home text-xl"></i>
+          <span class="text-xs">Home</span>
+        </a>
+        <a href="projects.html" class="nav-item flex flex-col items-center gap-1">
+         <i class="fa-solid fa-layer-group text-xl"></i>
+          <span class="text-xs">Projects</span>
+        </a>
+        <a href="about.html" class="nav-item flex flex-col items-center gap-1">
+          <i class="fa-solid fa-question text-xl"></i>
+          <span class="text-xs">About</span>
+        </a>
+        <a href="blog.html" class="nav-item flex flex-col items-center gap-1">
+         <i class="fa-solid fa-book text-xl"></i>
+          <span class="text-xs">Blog</span>
+        </a>
+        <a href="contact.html" class="nav-item flex flex-col items-center gap-1">
+         <i class="fa-solid fa-phone text-xl"></i>
+          <span class="text-xs">Contact</span>
+        </a>
+      </div>
+    </nav>
+
+
+    <script>
+      // Bottom navigation active state
+      const navItems = document.querySelectorAll(".nav-item");
+      const sections = document.querySelectorAll("section");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navItems.forEach((item) => {
+          item.classList.remove("active");
+          if (item.getAttribute("href") === `#${current}`) {
+            item.classList.add("active");
+          }
+        });
+      });
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+
