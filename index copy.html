@@ -31,93 +31,79 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
-
-<!-- ✅ Optimized and Valid JSON-LD Schema for Codevani -->
-<script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Codevani",
-    "url": "https://codevani.com",
-    "logo": "https://codevani.com/logo.svg",
-    "sameAs": [
-      "https://www.instagram.com/codevani_",
-      "https://www.linkedin.com/in/codenavi-company-4539a338a",
-      "https://x.com/codevani_"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-8287940985",
-      "contactType": "Customer Service",
-      "areaServed": "IN",
-      "availableLanguage": ["English", "Hindi"]
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Web Development",
-    "serviceType": "Website Design & Development",
-    "description": "Professional web development services including Laravel, React, WordPress, and modern UI/UX design.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Codevani",
-      "url": "https://codevani.com"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Codevani",
-    "image": "https://codevani.com/logo.svg",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "123 Example Street",
-      "addressLocality": "Jaipur",
-      "addressRegion": "Rajasthan",
-      "postalCode": "302001",
-      "addressCountry": "IN"
-    },
-    "telephone": "+91-8287940985",
-    "url": "https://codevani.com",
-    "priceRange": "$$",
-    "openingHours": "Mo-Sa 09:00-18:00"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Codevani",
-    "url": "https://codevani.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://codevani.com/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://codevani.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Services",
-        "item": "https://codevani.com/#services"
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Codevani",
+              "url": "https://codevani.com",
+              "logo": "https://codevani.com/logo.png",
+              "sameAs": [
+                "https://www.facebook.com/yourpage",
+                "https://www.linkedin.com/company/yourcompany",
+                "https://www.instagram.com/yourprofile"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-9876543210",
+                "contactType": "Customer Service"
+              }
+            }
+            {
+        "@type": "Service",
+        "name": "Web Development",
+        "description": "Custom web applications built with React, Node.js, and other modern technologies.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Codevani"
+        }
       }
-    ]
-  }
-]
-</script>
+      {
+        "@type": "LocalBusiness",
+        "name": "Codevani",
+        "image": "https://codevani.com/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Example Street",
+          "addressLocality": "City",
+          "addressRegion": "State",
+          "postalCode": "123456",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-9876543210",
+        "url": "https://codevani.com"
+      }
 
+      {
+        "@type": "WebSite",
+        "name": "Codevani",
+        "url": "https://codevani.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://codevani.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
 
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://codevani.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://codevani.com/#services"
+          }
+        ]
+      }
+    </script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
@@ -203,15 +189,15 @@
     </style>
   </head>
   <body class="bg-black text-white overflow-x-hidden">
-    <!-- <span class="gradient-text flex items-center fixed top-4 left-4 z-50">
+    <span class="gradient-text flex items-center fixed top-4 left-4 z-50">
       <img
-        src="./assets/img/logo.svg"
+        src="./assets/img/codevani-logo.svg"
         style="width: 20px"
         alt="Codevani – Web, App Development & Digital Branding Agency"
         title="Codevani – Expert in Website, App Development, Branding & Online Solutions"
       />
-      </span
-    > -->
+      <span class="font-bold">odevani</span></span
+    >
 
     <!-- Top Navigation for Desktop -->
     <nav
@@ -225,12 +211,13 @@
             <div class="text-2xl font-bold">
               <span class="gradient-text flex items-center">
                 <img
-                  src="./assets/img/logo.svg"
-                  style="width: 120px"
+                  src="./assets/img/codevani-logo.svg"
+                  style="width: 20px"
                   alt="Codevani – Web, App Development & Digital Branding Agency"
                   title="Codevani – Expert in Website, App Development, Branding & Online Solutions"
                 />
-                </span>
+                <span class="font-bold">odevani</span></span
+              >
             </div>
           </div>
           <div class="flex gap-10 items-center">
@@ -505,8 +492,7 @@
             Technologies We <span class="gradient-text">Master</span>
           </h2>
           <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-            Leveraging cutting-edge technologies to build scalable,
-            high-performance solutions
+            Leveraging cutting-edge technologies to build scalable, high-performance solutions
           </p>
         </div>
 
@@ -519,53 +505,39 @@
             <h3 class="text-2xl font-bold mb-6">Frontend Development</h3>
             <div class="grid grid-cols-3 gap-4">
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fab fa-react text-3xl text-cyan-400"></i>
                 </div>
                 <span class="text-sm text-gray-400">React</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fab fa-vuejs text-3xl text-green-400"></i>
                 </div>
                 <span class="text-sm text-gray-400">Vue.js</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fab fa-angular text-3xl text-red-400"></i>
                 </div>
                 <span class="text-sm text-gray-400">Angular</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <svg class="w-8 h-8" viewBox="0 0 24 24" fill="white">
-                    <path
-                      d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"
-                    />
+                    <path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"/>
                   </svg>
                 </div>
                 <span class="text-sm text-gray-400">Next.js</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fab fa-html5 text-3xl text-orange-400"></i>
                 </div>
                 <span class="text-sm text-gray-400">HTML5</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fab fa-css3-alt text-3xl text-blue-400"></i>
                 </div>
                 <span class="text-sm text-gray-400">CSS3</span>
@@ -581,49 +553,37 @@
             <h3 class="text-2xl font-bold mb-6">Backend Development</h3>
             <div class="grid grid-cols-3 gap-4">
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fab fa-node-js text-3xl text-green-500"></i>
                 </div>
                 <span class="text-sm text-gray-400">Node.js</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fab fa-python text-3xl text-blue-400"></i>
                 </div>
                 <span class="text-sm text-gray-400">Python</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fab fa-php text-3xl text-purple-400"></i>
                 </div>
                 <span class="text-sm text-gray-400">PHP</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fab fa-java text-3xl text-red-400"></i>
                 </div>
                 <span class="text-sm text-gray-400">Java</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fab fa-laravel text-3xl text-red-500"></i>
                 </div>
                 <span class="text-sm text-gray-400">Laravel</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fab fa-aws text-3xl text-orange-400"></i>
                 </div>
                 <span class="text-sm text-gray-400">AWS</span>
@@ -639,53 +599,39 @@
             <h3 class="text-2xl font-bold mb-6">Mobile & Database</h3>
             <div class="grid grid-cols-3 gap-4">
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fab fa-android text-3xl text-green-400"></i>
                 </div>
                 <span class="text-sm text-gray-400">Android</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fab fa-apple text-3xl text-gray-300"></i>
                 </div>
                 <span class="text-sm text-gray-400">iOS</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <svg class="w-8 h-8" viewBox="0 0 24 24" fill="#61DAFB">
-                    <path
-                      d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85S10.13 13 10.13 12c0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 0 1-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74l-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16l-.3-.51m6.54-.76l.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9c-.6 0-1.17 0-1.71.03-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03.6 0 1.17 0 1.71-.03.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74l.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16l.3.51m1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68s-1.83 2.93-4.37 3.68c.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.37-1.95-1.92 1.83-3.91 2.79-5.38 1.95-1.46-.84-1.62-3.05-1-5.63-2.54-.75-4.37-1.99-4.37-3.68s1.83-2.93 4.37-3.68c-.62-2.58-.46-4.79 1-5.63 1.47-.84 3.46.12 5.38 1.95 1.92-1.83 3.91-2.79 5.37-1.95M17.08 12c.34.75.64 1.5.89 2.26 2.1-.63 3.28-1.53 3.28-2.26 0-.73-1.18-1.63-3.28-2.26-.25.76-.55 1.51-.89 2.26M6.92 12c-.34-.75-.64-1.5-.89-2.26-2.1.63-3.28 1.53-3.28 2.26 0 .73 1.18 1.63 3.28 2.26.25-.76.55-1.51.89-2.26m9.22 0l1.5-2.5c-.53-.83-1.09-1.59-1.67-2.29-.72.09-1.47.14-2.26.14s-1.54-.05-2.26-.14c-.58.7-1.14 1.46-1.67 2.29L10.78 12l-1.5 2.5c.53.83 1.09 1.59 1.67 2.29.72-.09 1.47-.14 2.26-.14s1.54.05 2.26.14c.58-.7 1.14-1.46 1.67-2.29L16.14 12z"
-                    />
+                    <path d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85S10.13 13 10.13 12c0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 0 1-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74l-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16l-.3-.51m6.54-.76l.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9c-.6 0-1.17 0-1.71.03-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03.6 0 1.17 0 1.71-.03.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74l.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16l.3.51m1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68s-1.83 2.93-4.37 3.68c.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.37-1.95-1.92 1.83-3.91 2.79-5.38 1.95-1.46-.84-1.62-3.05-1-5.63-2.54-.75-4.37-1.99-4.37-3.68s1.83-2.93 4.37-3.68c-.62-2.58-.46-4.79 1-5.63 1.47-.84 3.46.12 5.38 1.95 1.92-1.83 3.91-2.79 5.37-1.95M17.08 12c.34.75.64 1.5.89 2.26 2.1-.63 3.28-1.53 3.28-2.26 0-.73-1.18-1.63-3.28-2.26-.25.76-.55 1.51-.89 2.26M6.92 12c-.34-.75-.64-1.5-.89-2.26-2.1.63-3.28 1.53-3.28 2.26 0 .73 1.18 1.63 3.28 2.26.25-.76.55-1.51.89-2.26m9.22 0l1.5-2.5c-.53-.83-1.09-1.59-1.67-2.29-.72.09-1.47.14-2.26.14s-1.54-.05-2.26-.14c-.58.7-1.14 1.46-1.67 2.29L10.78 12l-1.5 2.5c.53.83 1.09 1.59 1.67 2.29.72-.09 1.47-.14 2.26-.14s1.54.05 2.26.14c.58-.7 1.14-1.46 1.67-2.29L16.14 12z"/>
                   </svg>
                 </div>
                 <span class="text-sm text-gray-400">React Native</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fas fa-database text-3xl text-blue-400"></i>
                 </div>
                 <span class="text-sm text-gray-400">MongoDB</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fas fa-database text-3xl text-orange-400"></i>
                 </div>
                 <span class="text-sm text-gray-400">MySQL</span>
               </div>
               <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
+                <div class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center">
                   <i class="fas fa-fire text-3xl text-yellow-400"></i>
                 </div>
                 <span class="text-sm text-gray-400">Firebase</span>
@@ -697,9 +643,7 @@
     </section>
 
     <!-- Process Section -->
-    <section
-      class="py-20 px-4 pb-safe bg-gradient-to-b from-black to-purple-900/20"
-    >
+    <section class="py-20 px-4 pb-safe bg-gradient-to-b from-black to-purple-900/20">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-6xl font-bold mb-4">
@@ -712,63 +656,44 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div class="glass-effect rounded-3xl p-8 text-center">
-            <div
-              class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center"
-            >
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center">
               <span class="text-2xl font-bold">1</span>
             </div>
             <h3 class="text-xl font-bold mb-3">Discovery & Planning</h3>
-            <p class="text-gray-400">
-              Understanding your goals, target audience, and project
-              requirements
-            </p>
+            <p class="text-gray-400">Understanding your goals, target audience, and project requirements</p>
           </div>
 
           <div class="glass-effect rounded-3xl p-8 text-center">
-            <div
-              class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center"
-            >
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center">
               <span class="text-2xl font-bold">2</span>
             </div>
             <h3 class="text-xl font-bold mb-3">Design & Prototype</h3>
-            <p class="text-gray-400">
-              Creating wireframes, mockups, and interactive prototypes for
-              approval
-            </p>
+            <p class="text-gray-400">Creating wireframes, mockups, and interactive prototypes for approval</p>
           </div>
 
           <div class="glass-effect rounded-3xl p-8 text-center">
-            <div
-              class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center"
-            >
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center">
               <span class="text-2xl font-bold">3</span>
             </div>
             <h3 class="text-xl font-bold mb-3">Development & Testing</h3>
-            <p class="text-gray-400">
-              Building your solution with clean code and rigorous quality
-              testing
-            </p>
+            <p class="text-gray-400">Building your solution with clean code and rigorous quality testing</p>
           </div>
 
           <div class="glass-effect rounded-3xl p-8 text-center">
-            <div
-              class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center"
-            >
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center">
               <span class="text-2xl font-bold">4</span>
             </div>
             <h3 class="text-xl font-bold mb-3">Launch & Support</h3>
-            <p class="text-gray-400">
-              Deploying your project and providing ongoing maintenance and
-              updates
-            </p>
+            <p class="text-gray-400">Deploying your project and providing ongoing maintenance and updates</p>
           </div>
         </div>
       </div>
     </section>
 
+    
     <!-- Testimonials Section -->
     <section class="py-20 px-4">
-      <div class="max-w-7xl mx-auto">
+      <div class="max-w-6xl mx-auto">
         <h2 class="text-4xl md:text-5xl font-bold mb-6 text-center">
           What Our <span class="gradient-text">Clients Say</span>
         </h2>
@@ -863,7 +788,7 @@
     </section>
     <!-- FAQ Section -->
     <section class="py-20 px-4 pb-safe">
-      <div class="max-w-7xl mx-auto">
+      <div class="max-w-4xl mx-auto">
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-6xl font-bold mb-4">
             Frequently Asked <span class="gradient-text">Questions</span>
@@ -875,86 +800,52 @@
 
         <div class="space-y-4">
           <details class="glass-effect rounded-2xl p-6 group">
-            <summary
-              class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
-            >
+            <summary class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
               <span>How long does it take to develop a website?</span>
-              <i
-                class="fas fa-chevron-down group-open:rotate-180 transition-transform"
-              ></i>
+              <i class="fas fa-chevron-down group-open:rotate-180 transition-transform"></i>
             </summary>
             <p class="text-gray-400 mt-4 pl-2">
-              The timeline varies based on project complexity. A basic website
-              takes 2-4 weeks, while complex web applications can take 2-6
-              months. We provide detailed timelines during the discovery phase.
+              The timeline varies based on project complexity. A basic website takes 2-4 weeks, while complex web applications can take 2-6 months. We provide detailed timelines during the discovery phase.
             </p>
           </details>
 
           <details class="glass-effect rounded-2xl p-6 group">
-            <summary
-              class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
-            >
+            <summary class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
               <span>What is your development process?</span>
-              <i
-                class="fas fa-chevron-down group-open:rotate-180 transition-transform"
-              ></i>
+              <i class="fas fa-chevron-down group-open:rotate-180 transition-transform"></i>
             </summary>
             <p class="text-gray-400 mt-4 pl-2">
-              We follow an agile methodology with four key phases: Discovery &
-              Planning, Design & Prototype, Development & Testing, and Launch &
-              Support. You'll receive regular updates and have opportunities to
-              provide feedback throughout.
+              We follow an agile methodology with four key phases: Discovery & Planning, Design & Prototype, Development & Testing, and Launch & Support. You'll receive regular updates and have opportunities to provide feedback throughout.
             </p>
           </details>
 
           <details class="glass-effect rounded-2xl p-6 group">
-            <summary
-              class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
-            >
+            <summary class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
               <span>Do you provide ongoing support and maintenance?</span>
-              <i
-                class="fas fa-chevron-down group-open:rotate-180 transition-transform"
-              ></i>
+              <i class="fas fa-chevron-down group-open:rotate-180 transition-transform"></i>
             </summary>
             <p class="text-gray-400 mt-4 pl-2">
-              Yes, we offer comprehensive maintenance packages including
-              security updates, bug fixes, performance optimization, and feature
-              enhancements. We're here to ensure your digital solution continues
-              to perform optimally.
+              Yes, we offer comprehensive maintenance packages including security updates, bug fixes, performance optimization, and feature enhancements. We're here to ensure your digital solution continues to perform optimally.
             </p>
           </details>
 
           <details class="glass-effect rounded-2xl p-6 group">
-            <summary
-              class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
-            >
+            <summary class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
               <span>What technologies do you specialize in?</span>
-              <i
-                class="fas fa-chevron-down group-open:rotate-180 transition-transform"
-              ></i>
+              <i class="fas fa-chevron-down group-open:rotate-180 transition-transform"></i>
             </summary>
             <p class="text-gray-400 mt-4 pl-2">
-              We specialize in modern web technologies including React, Next.js,
-              Node.js, Python, and mobile development with React Native. We
-              choose the best technology stack based on your specific project
-              requirements.
+              We specialize in modern web technologies including React, Next.js, Node.js, Python, and mobile development with React Native. We choose the best technology stack based on your specific project requirements.
             </p>
           </details>
 
           <details class="glass-effect rounded-2xl p-6 group">
-            <summary
-              class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
-            >
+            <summary class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between">
               <span>How much does a custom website cost?</span>
-              <i
-                class="fas fa-chevron-down group-open:rotate-180 transition-transform"
-              ></i>
+              <i class="fas fa-chevron-down group-open:rotate-180 transition-transform"></i>
             </summary>
             <p class="text-gray-400 mt-4 pl-2">
-              Project costs vary based on scope, features, and complexity. Basic
-              websites start from ₹50,000, while complex web applications can
-              range from ₹2,00,000 to ₹10,00,000+. We provide detailed quotes
-              after understanding your requirements.
+              Project costs vary based on scope, features, and complexity. Basic websites start from ₹50,000, while complex web applications can range from ₹2,00,000 to ₹10,00,000+. We provide detailed quotes after understanding your requirements.
             </p>
           </details>
         </div>
@@ -962,7 +853,7 @@
     </section>
 
     <!-- CTA Section -->
-    <!-- <section class="py-20 px-4 pb-safe">
+    <section class="py-20 px-4 pb-safe">
       <div class="max-w-5xl mx-auto glass-effect rounded-3xl p-12 text-center">
         <h2 class="text-4xl md:text-5xl font-bold mb-6">
           Ready to Transform Your <span class="gradient-text">Digital Presence?</span>
@@ -971,7 +862,7 @@
           Let's discuss your project and explore how we can help you achieve your business goals with innovative digital solutions.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="contact.html" class="bg-gradient-to-r from-orange-400 to-purple-500 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:shadow-purple-500/50 transition">
+          <a href="#contact" class="bg-gradient-to-r from-orange-400 to-purple-500 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:shadow-purple-500/50 transition">
             Get Started Now
           </a>
           <a href="projects.html" class="glass-effect px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition">
@@ -979,10 +870,10 @@
           </a>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- Contact Form Section -->
-    <section id="contact" class="py-20 px-4 pb-safe">
+    <!-- <section id="contact" class="py-20 px-4 pb-safe">
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-12">
           <h2 class="text-4xl md:text-5xl font-bold mb-6">
@@ -1032,7 +923,7 @@
                 />
               </div>
 
-              <!-- <div>
+              <div>
                 <label class="block text-sm font-medium mb-2"
                   >Service Interested In *</label
                 >
@@ -1048,15 +939,17 @@
                   <option value="seo">SEO Optimization</option>
                   <option value="marketing">Digital Marketing</option>
                 </select>
-              </div> -->
+              </div>
 
               <div>
-                <label class="block text-sm font-medium mb-2">Message</label>
+                <label class="block text-sm font-medium mb-2"
+                  >Project Details *</label
+                >
                 <textarea
                   required
                   rows="4"
                   class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition resize-none"
-                  placeholder="Tell us about your thought..."
+                  placeholder="Tell us about your project..."
                 ></textarea>
               </div>
 
@@ -1070,24 +963,16 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="border-t border-gray-800 py-8 px-4 pb-24 md:pb-8">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-               <span class="gradient-text flex items-center">
-                <img
-                  src="./assets/img/logo.svg"
-                  style="width: 120px"
-                  alt="Codevani – Web, App Development & Digital Branding Agency"
-                  title="Codevani – Expert in Website, App Development, Branding & Online Solutions"
-                />
-                </span>
-            <!-- <div class="text-2xl font-bold mb-4">
+            <div class="text-2xl font-bold mb-4">
               <span class="gradient-text">Codevani</span>
-            </div> -->
+            </div>
             <p class="text-gray-400">
               Creating digital experiences that matter
             </p>

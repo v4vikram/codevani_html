@@ -19,6 +19,143 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+      <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Codevani",
+          "url": "https://codevani.com",
+          "logo": "https://codevani.com/logo.svg",
+          "sameAs": [
+            "https://www.instagram.com/codevani_",
+            "https://www.linkedin.com/in/codenavi-company-4539a338a",
+            "https://x.com/codevani_"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-8287940985",
+            "contactType": "Customer Service",
+            "areaServed": "IN",
+            "availableLanguage": ["English", "Hindi"]
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Our Projects | Codevani",
+          "url": "https://codevani.com/projects",
+          "description": "Explore Codevani's portfolio of successful web development, mobile apps, and digital transformation projects. See how we've helped businesses achieve their goals.",
+          "inLanguage": "en",
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "Codevani",
+            "url": "https://codevani.com"
+          },
+          "primaryImageOfPage": "https://codevani.com/logo.svg",
+          "about": {
+            "@type": "Organization",
+            "name": "Codevani"
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://codevani.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projects",
+                "item": "https://codevani.com/projects"
+              }
+            ]
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "name": "Codevani Projects Portfolio",
+          "description": "List of featured and completed projects by Codevani including web, app, and UI/UX design solutions.",
+          "url": "https://codevani.com/projects",
+          "itemListOrder": "Descending",
+          "numberOfItems": "3",
+          "itemListElement": [
+            {
+              "@type": "CreativeWork",
+              "position": 1,
+              "name": "ShopHub - Modern E-commerce Platform",
+              "description": "A comprehensive e-commerce solution with inventory management, analytics, and seamless payment integration built with React and Node.js.",
+              "keywords": "E-commerce, Web Development, React, Node.js",
+              "url": "https://codevani.com/projects#shophub"
+            },
+            {
+              "@type": "CreativeWork",
+              "position": 2,
+              "name": "HealthTrack Pro",
+              "description": "A health monitoring app with real-time tracking, medication reminders, and doctor consultation features.",
+              "keywords": "Mobile App, Healthcare, Java, Angular",
+              "url": "https://codevani.com/projects#healthtrack"
+            },
+            {
+              "@type": "CreativeWork",
+              "position": 3,
+              "name": "DesignFlow Studio",
+              "description": "Enterprise-grade UI/UX design system with reusable components, style guides, and documentation for teams.",
+              "keywords": "UI/UX, Design System, Figma, React",
+              "url": "https://codevani.com/projects#designflow"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Digital Project Development",
+          "provider": {
+            "@type": "Organization",
+            "name": "Codevani",
+            "url": "https://codevani.com"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "India"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Website & App Development Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Web Development",
+                  "description": "Custom website development using Laravel, React, and WordPress."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Mobile App Development",
+                  "description": "Modern cross-platform mobile apps for Android and iOS."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "UI/UX Design",
+                  "description": "Creative and functional design systems for seamless user experience."
+                }
+              }
+            ]
+          }
+        }
+      ]
+    </script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
@@ -151,101 +288,61 @@
     </style>
   </head>
   <body class="bg-black text-white overflow-x-hidden">
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+   
 
-      * {
-        font-family: "Inter", sans-serif;
-      }
 
-      .gradient-text {
-        background: linear-gradient(
-          135deg,
-          #fbbf77 0%,
-          #c084fc 50%,
-          #a78bfa 100%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
+    <!-- Top Navigation for Desktop -->
+    <nav
+      class="hidden md:flex fixed top-4 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-3xl"
+    >
+      <div
+        class="w-full bg-zinc-900/95 backdrop-blur-md rounded-full px-8 py-3 border border-zinc-800 shadow-2xl"
+      >
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <div class="text-2xl font-bold">
+              <span class="gradient-text flex items-center">
+                <img
+                  src="./assets/img/logo.svg"
+                  style="width: 120px"
+                  alt="Codevani – Web, App Development & Digital Branding Agency"
+                  title="Codevani – Expert in Website, App Development, Branding & Online Solutions"
+                />
+                </span>
+            </div>
+          </div>
+          <div class="flex gap-10 items-center">
+            <a
+              href="index.html"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >Home</a
+            >
+            <a
+              href="projects.html"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >Projects</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >About</a
+            >
+            <a
+              href="blog.html"
+              class="text-gray-400 hover:text-white transition text-sm"
+              >Blog</a
+            >
 
-      .glass-effect {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-
-      .service-card {
-        transition: all 0.3s ease;
-      }
-
-      .service-card:hover {
-        transform: translateY(-10px);
-        background: rgba(255, 255, 255, 0.08);
-      }
-
-      .animate-float {
-        animation: float 3s ease-in-out infinite;
-      }
-
-      @keyframes float {
-        0%,
-        100% {
-          transform: translateY(0px);
-        }
-        50% {
-          transform: translateY(-20px);
-        }
-      }
-
-      .bottom-nav {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 50;
-      }
-
-      .nav-item {
-        transition: all 0.3s ease;
-      }
-
-      .nav-item.active {
-        color: #fbbf77;
-      }
-
-      .nav-item:hover {
-        color: #c084fc;
-        transform: translateY(-5px);
-      }
-
-      .pb-safe {
-        padding-bottom: 80px;
-      }
-
-      @media (min-width: 768px) {
-        .pb-safe {
-          padding-bottom: 0;
-        }
-
-        .bottom-nav {
-          position: relative;
-        }
-      }
-    </style>
-
-    <!-- Mobile Header -->
-    <div class="md:hidden fixed top-0 left-0 right-0 z-50 bg-zinc-900/95 backdrop-blur-md border-b border-zinc-800">
-      <div class="flex items-center justify-between px-4 py-4">
-        <div class="text-xl font-bold">
-          <span class="gradient-text">Codevani</span>
+            <a
+              href="contact.html"
+              class="bg-white text-black px-6 py-2 rounded-full font-medium text-sm hover:bg-gray-200 transition"
+            >
+              Let’s Talk
+            </a>
+          </div>
         </div>
-        <a href="index.html" class="back-button text-gray-400 hover:text-white transition">
-          <i class="fas fa-arrow-left text-xl"></i>
-        </a>
       </div>
-    </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="min-h-[60vh] flex items-center justify-center px-4 pt-32 md:pt-24 pb-safe">
@@ -697,6 +794,7 @@
       </div>
     </footer>
     
+
     <!-- Bottom Navigation (Mobile) -->
     <nav class="bottom-nav md:hidden glass-effect border-t border-gray-800">
       <div class="flex justify-around items-center py-4 px-2">
@@ -707,8 +805,11 @@
           <i class="fas fa-home text-xl"></i>
           <span class="text-xs">Home</span>
         </a>
-        <a href="projects.html" class="nav-item flex flex-col items-center gap-1">
-         <i class="fa-solid fa-layer-group text-xl"></i>
+        <a
+          href="projects.html"
+          class="nav-item flex flex-col items-center gap-1"
+        >
+          <i class="fa-solid fa-layer-group text-xl"></i>
           <span class="text-xs">Projects</span>
         </a>
         <a href="about.html" class="nav-item flex flex-col items-center gap-1">
@@ -716,16 +817,18 @@
           <span class="text-xs">About</span>
         </a>
         <a href="blog.html" class="nav-item flex flex-col items-center gap-1">
-         <i class="fa-solid fa-book text-xl"></i>
+          <i class="fa-solid fa-book text-xl"></i>
           <span class="text-xs">Blog</span>
         </a>
-        <a href="contact.html" class="nav-item flex flex-col items-center gap-1">
-         <i class="fa-solid fa-phone text-xl"></i>
+        <a
+          href="contact.html"
+          class="nav-item flex flex-col items-center gap-1"
+        >
+          <i class="fa-solid fa-phone text-xl"></i>
           <span class="text-xs">Contact</span>
         </a>
       </div>
     </nav>
-
 
     <script>
       // Filter functionality
