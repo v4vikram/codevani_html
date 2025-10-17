@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Graphic Design | Codevani</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <style>
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      @keyframes pulse-glow {
+        0%,
+        100% {
+          box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+        }
+        50% {
+          box-shadow: 0 0 40px rgba(168, 85, 247, 0.6);
+        }
+      }
+
+      @keyframes gradient-shift {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #fb923c, #a855f7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .pulse-glow {
+        animation: pulse-glow 2s ease-in-out infinite;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(135deg, #fb923c, #a855f7);
+        background-size: 200% 200%;
+        animation: gradient-shift 3s ease infinite;
+      }
+
+      .countdown-item {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        min-width: 100px;
+      }
+
+      .particle {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.3;
+        animation: float 6s ease-in-out infinite;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-black text-white min-h-screen flex items-center justify-center relative overflow-hidden."
+  >
+    <!-- Animated Background Particles -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div
+        class="particle w-32 h-32 bg-purple-500/20 top-10 left-20"
+        style="animation-delay: 0s"
+      ></div>
+      <div
+        class="particle w-24 h-24 bg-orange-500/20 top-40 right-32"
+        style="animation-delay: 1s"
+      ></div>
+      <div
+        class="particle w-40 h-40 bg-purple-500/20 bottom-20 left-40"
+        style="animation-delay: 2s"
+      ></div>
+      <div
+        class="particle w-28 h-28 bg-orange-500/20 bottom-40 right-20"
+        style="animation-delay: 1.5s"
+      ></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+      <!-- Logo Animation -->
+      <div class="mb-12 animate-float">
+        <div class="inline-block glass-effect rounded-3xl p-8 pulse-glow">
+          <i class="fas fa-rocket text-7xl gradient-text"></i>
+        </div>
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
+        Something <span class="gradient-text">Amazing</span> is Coming
+      </h1>
+
+      <p class="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto">
+        We're crafting an extraordinary digital experience. Get ready to witness
+        innovation like never before.
+      </p>
+      <a href=""></a>
+
+      <!-- Social Links -->
+      <div class="flex justify-center gap-6 mb-8">
+        <a
+          href="#"
+          class="text-3xl hover:text-purple-400 transition transform hover:scale-110"
+        >
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a
+          href="#"
+          class="text-3xl hover:text-purple-400 transition transform hover:scale-110"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="#"
+          class="text-3xl hover:text-purple-400 transition transform hover:scale-110"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="#"
+          class="text-3xl hover:text-purple-400 transition transform hover:scale-110"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

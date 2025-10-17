@@ -24,183 +24,308 @@
       content="Transform your digital presence with web and mobile app solutions, UI/UX design, and marketing services."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://codevani.com/hero-image.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="canonical" href="https://codevani.com/" />
+    <meta name="theme-color" content="#000" />
+    <meta property="og:image" content="https://codevani.com/logo.png" />
+    <meta name="twitter:image" content="https://codevani.com/logo.png" />
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preload" href="./assets/css/app.css" as="style" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
 
-
-<!-- ✅ Optimized and Valid JSON-LD Schema for Codevani -->
-<script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Codevani",
-    "url": "https://codevani.com",
-    "logo": "https://codevani.com/logo.svg",
-    "sameAs": [
-      "https://www.instagram.com/codevani_",
-      "https://www.linkedin.com/in/codenavi-company-4539a338a",
-      "https://x.com/codevani_"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-8287940985",
-      "contactType": "Customer Service",
-      "areaServed": "IN",
-      "availableLanguage": ["English", "Hindi"]
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Web Development",
-    "serviceType": "Website Design & Development",
-    "description": "Professional web development services including Laravel, React, WordPress, and modern UI/UX design.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Codevani",
-      "url": "https://codevani.com"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Codevani",
-    "image": "https://codevani.com/logo.svg",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "123 Example Street",
-      "addressLocality": "Jaipur",
-      "addressRegion": "Rajasthan",
-      "postalCode": "302001",
-      "addressCountry": "IN"
-    },
-    "telephone": "+91-8287940985",
-    "url": "https://codevani.com",
-    "priceRange": "$$",
-    "openingHours": "Mo-Sa 09:00-18:00"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Codevani",
-    "url": "https://codevani.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://codevani.com/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    <!-- ✅ Optimized and Valid JSON-LD Schema for Codevani -->
+    <script type="application/ld+json">
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://codevani.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Services",
-        "item": "https://codevani.com/#services"
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://codevani.com/#organization",
+            "name": "Codevani",
+            "url": "https://codevani.com",
+            "logo": "https://codevani.com/logo.png",
+            "sameAs": [
+              "https://www.instagram.com/codevani_",
+              "https://www.linkedin.com/in/codenavi-company-4539a338a",
+              "https://x.com/codevani_"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-8287940985",
+              "contactType": "Customer Service",
+              "areaServed": "IN",
+              "availableLanguage": ["English", "Hindi"]
+            }
+          },
+          {
+            "@type": "Service",
+            "@id": "https://codevani.com/#webdevelopment",
+            "name": "Web Development",
+            "serviceType": "Website Design & Development",
+            "description": "Professional web development services including Laravel, React, WordPress, and modern UI/UX design.",
+            "provider": { "@id": "https://codevani.com/#organization" }
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://codevani.com/#localbusiness",
+            "name": "Codevani",
+            "image": "https://codevani.com/logo.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "123 Example Street",
+              "addressLocality": "Jaipur",
+              "addressRegion": "Rajasthan",
+              "postalCode": "302001",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "26.9124",
+              "longitude": "75.7873"
+            },
+            "telephone": "+91-8287940985",
+            "url": "https://codevani.com",
+            "priceRange": "$$",
+            "openingHours": "Mo-Sa 09:00-18:00",
+            "sameAs": [
+              "https://www.instagram.com/codevani_",
+              "https://www.linkedin.com/in/codenavi-company-4539a338a",
+              "https://x.com/codevani_"
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Codevani Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Web Development"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Mobile App Development"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": { "@type": "Service", "name": "UI/UX Design" }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "SEO & Digital Marketing"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "WebSite",
+            "name": "Codevani",
+            "url": "https://codevani.com",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://codevani.com/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://codevani.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://codevani.com/#services"
+              }
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "name": "Hero Section Stats",
+            "itemListElement": [
+              {
+                "@type": "Claim",
+                "claimReviewed": "500+ Projects Done",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                }
+              },
+              {
+                "@type": "Claim",
+                "claimReviewed": "250+ Happy Clients",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                }
+              },
+              {
+                "@type": "Claim",
+                "claimReviewed": "50+ Team Members",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                }
+              },
+              {
+                "@type": "Claim",
+                "claimReviewed": "15+ Awards Won",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "name": "Technologies We Master",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "React" },
+              { "@type": "ListItem", "position": 2, "name": "Vue.js" },
+              { "@type": "ListItem", "position": 3, "name": "Angular" },
+              { "@type": "ListItem", "position": 4, "name": "Next.js" },
+              { "@type": "ListItem", "position": 5, "name": "HTML5" },
+              { "@type": "ListItem", "position": 6, "name": "CSS3" },
+              { "@type": "ListItem", "position": 7, "name": "Node.js" },
+              { "@type": "ListItem", "position": 8, "name": "Python" },
+              { "@type": "ListItem", "position": 9, "name": "PHP" },
+              { "@type": "ListItem", "position": 10, "name": "Java" },
+              { "@type": "ListItem", "position": 11, "name": "Laravel" },
+              { "@type": "ListItem", "position": 12, "name": "AWS" },
+              { "@type": "ListItem", "position": 13, "name": "Android" },
+              { "@type": "ListItem", "position": 14, "name": "iOS" },
+              { "@type": "ListItem", "position": 15, "name": "React Native" },
+              { "@type": "ListItem", "position": 16, "name": "MongoDB" },
+              { "@type": "ListItem", "position": 17, "name": "MySQL" },
+              { "@type": "ListItem", "position": 18, "name": "Firebase" }
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "name": "Development Process",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Discovery & Planning"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Design & Prototype"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Development & Testing"
+              },
+              { "@type": "ListItem", "position": 4, "name": "Launch & Support" }
+            ]
+          },
+          {
+            "@type": "Review",
+            "itemReviewed": { "@type": "Organization", "name": "Codevani" },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "author": { "@type": "Person", "name": "Rajesh Kumar" },
+            "reviewBody": "Codevani transformed our outdated platform into a modern, user-friendly solution. The team's expertise and dedication exceeded our expectations."
+          },
+          {
+            "@type": "Review",
+            "itemReviewed": { "@type": "Organization", "name": "Codevani" },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "author": { "@type": "Person", "name": "Priya Sharma" },
+            "reviewBody": "The mobile app they developed has been a game-changer for our business. User engagement increased by 300% within the first month!"
+          },
+          {
+            "@type": "Review",
+            "itemReviewed": { "@type": "Organization", "name": "Codevani" },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "author": { "@type": "Person", "name": "Arjun Patel" },
+            "reviewBody": "Professional, responsive, and incredibly talented. Codevani delivered our project on time and within budget. Highly recommended!"
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How long does it take to develop a website?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The timeline varies based on project complexity. A basic website takes 2-4 weeks, while complex web applications can take 2-6 months. We provide detailed timelines during the discovery phase."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is your development process?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We follow an agile methodology with four key phases: Discovery & Planning, Design & Prototype, Development & Testing, and Launch & Support. You'll receive regular updates and have opportunities to provide feedback throughout."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide ongoing support and maintenance?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we offer comprehensive maintenance packages including security updates, bug fixes, performance optimization, and feature enhancements. We're here to ensure your digital solution continues to perform optimally."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What technologies do you specialize in?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We specialize in modern web technologies including React, Next.js, Node.js, Python, and mobile development with React Native. We choose the best technology stack based on your specific project requirements."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does a custom website cost?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Project costs vary based on scope, features, and complexity. Basic websites start from ₹50,000, while complex web applications can range from ₹2,00,000 to ₹10,00,000+. We provide detailed quotes after understanding your requirements."
+                }
+              }
+            ]
+          }
+        ]
       }
-    ]
-  }
-]
-</script>
-
-
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
-
-      * {
-        font-family: "Inter", sans-serif;
-      }
-
-      .gradient-text {
-        background: linear-gradient(
-          135deg,
-          #fbbf77 0%,
-          #c084fc 50%,
-          #a78bfa 100%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-
-      .glass-effect {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-
-      .service-card {
-        transition: all 0.3s ease;
-      }
-
-      .service-card:hover {
-        transform: translateY(-10px);
-        background: rgba(255, 255, 255, 0.08);
-      }
-
-      .animate-float {
-        animation: float 3s ease-in-out infinite;
-      }
-
-      @keyframes float {
-        0%,
-        100% {
-          transform: translateY(0px);
-        }
-        50% {
-          transform: translateY(-20px);
-        }
-      }
-
-      .bottom-nav {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 50;
-      }
-
-      .nav-item {
-        transition: all 0.3s ease;
-      }
-
-      .nav-item.active {
-        color: #fbbf77;
-      }
-
-      .nav-item:hover {
-        color: #c084fc;
-        transform: translateY(-5px);
-      }
-
-      .pb-safe {
-        padding-bottom: 80px;
-      }
-
-      @media (min-width: 768px) {
-        .pb-safe {
-          padding-bottom: 0;
-        }
-
-        .bottom-nav {
-          position: relative;
-        }
-      }
-    </style>
+    </script>
   </head>
   <body class="bg-black text-white overflow-x-hidden">
     <!-- <span class="gradient-text flex items-center fixed top-4 left-4 z-50">
@@ -223,14 +348,14 @@
         <div class="flex items-center justify-between">
           <div class="flex items-center">
             <div class="text-2xl font-bold">
-              <span class="gradient-text flex items-center">
+              <a href="index.html" class="gradient-text flex items-center">
                 <img
                   src="./assets/img/logo.svg"
                   style="width: 120px"
                   alt="Codevani – Web, App Development & Digital Branding Agency"
                   title="Codevani – Expert in Website, App Development, Branding & Online Solutions"
                 />
-                </span>
+              </a>
             </div>
           </div>
           <div class="flex gap-10 items-center">
@@ -266,703 +391,777 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section
-      id="home"
-      class="min-h-screen flex items-center justify-center px-4 pt-20 md:pt-0 pb-safe"
-    >
-      <div class="max-w-7xl mx-auto text-center">
-        <div class="mb-8 animate-float">
-          <div class="inline-block glass-effect rounded-3xl p-8 mb-8">
-            <i class="fas fa-code text-6xl gradient-text"></i>
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="home"
+        aria-label="Hero section of Codevani homepage"
+        class="min-h-screen flex items-center justify-center px-4 pt-20 md:pt-0 pb-safe relative bg-gray-900 text-white"
+      >
+        <div class="max-w-7xl mx-auto text-center">
+          <!-- Decorative Icon -->
+          <div class="mb-8 animate-float">
+            <div class="inline-block glass-effect rounded-3xl p-8 mb-8">
+              <i
+                class="fas fa-code text-6xl gradient-text"
+                aria-hidden="true"
+              ></i>
+            </div>
           </div>
-        </div>
-        <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
-          Web & App <span class="gradient-text">development</span>
-        </h1>
-        <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto">
-          Transform your digital presence with stunning web applications and
-          cutting-edge design solutions
-        </p>
-        <div
-          class="flex flex-col sm:flex-row gap-4 justify-center items-center"
-        >
-          <button
-            class="bg-gradient-to-r from-orange-400 to-purple-500 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:shadow-purple-500/50 transition w-full sm:w-auto"
-          >
-            Start Your Project
-          </button>
-          <button
-            class="glass-effect px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition w-full sm:w-auto"
-          >
-            <i class="fas fa-play mr-2"></i> View Demo
-          </button>
-        </div>
 
-        <!-- Stats -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-          <div class="glass-effect rounded-2xl p-6">
-            <div class="text-4xl font-bold gradient-text">500+</div>
-            <div class="text-gray-400 mt-2">Projects Done</div>
-          </div>
-          <div class="glass-effect rounded-2xl p-6">
-            <div class="text-4xl font-bold gradient-text">250+</div>
-            <div class="text-gray-400 mt-2">Happy Clients</div>
-          </div>
-          <div class="glass-effect rounded-2xl p-6">
-            <div class="text-4xl font-bold gradient-text">50+</div>
-            <div class="text-gray-400 mt-2">Team Members</div>
-          </div>
-          <div class="glass-effect rounded-2xl p-6">
-            <div class="text-4xl font-bold gradient-text">15+</div>
-            <div class="text-gray-400 mt-2">Awards Won</div>
-          </div>
-        </div>
-      </div>
-    </section>
+          <!-- Main Heading -->
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
+            Codevani | Web & App <span class="gradient-text">Development</span>
+          </h1>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 px-4 pb-safe">
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-6xl font-bold mb-4">
-            Our <span class="gradient-text">Services</span>
-          </h2>
-          <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-            Comprehensive digital solutions tailored to elevate your business
+          <!-- Subheading / Paragraph -->
+          <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto">
+            Transform your digital presence with stunning web applications,
+            UI/UX design, and SEO-optimized solutions tailored to grow your
+            business.
           </p>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Example of Semantic Article -->
-          <article class="service-card glass-effect rounded-3xl p-8">
-            <div class="text-5xl mb-4">
-              <i class="fas fa-laptop-code gradient-text"></i>
-            </div>
-            <h3 class="text-2xl font-bold mb-3">Web Development</h3>
-            <p class="text-gray-400 mb-4">
-              Custom web applications built with modern technologies like React,
-              Node.js, and more
-            </p>
-            <a href="#" class="text-purple-400 hover:text-purple-300 transition"
-              >Learn more <i class="fas fa-arrow-right ml-2"></i
-            ></a>
-          </article>
-
-          <article class="service-card glass-effect rounded-3xl p-8">
-            <div class="text-5xl mb-4">
-              <i class="fas fa-mobile-alt gradient-text"></i>
-            </div>
-            <h3 class="text-2xl font-bold mb-3">Mobile Apps</h3>
-            <p class="text-gray-400 mb-4">
-              Native and cross-platform mobile applications for iOS and Android
-              devices
-            </p>
-            <a href="#" class="text-purple-400 hover:text-purple-300 transition"
-              >Learn more <i class="fas fa-arrow-right ml-2"></i
-            ></a>
-          </article>
-
-          <article class="service-card glass-effect rounded-3xl p-8">
-            <div class="text-5xl mb-4">
-              <i class="fas fa-paint-brush gradient-text"></i>
-            </div>
-            <h3 class="text-2xl font-bold mb-3">UI/UX Design</h3>
-            <p class="text-gray-400 mb-4">
-              Beautiful, intuitive designs that provide exceptional user
-              experiences
-            </p>
-            <a href="#" class="text-purple-400 hover:text-purple-300 transition"
-              >Learn more <i class="fas fa-arrow-right ml-2"></i
-            ></a>
-          </article>
-
-          <article class="service-card glass-effect rounded-3xl p-8">
-            <div class="text-5xl mb-4">
-              <i class="fas fa-shopping-cart gradient-text"></i>
-            </div>
-            <h3 class="text-2xl font-bold mb-3">E-Commerce</h3>
-            <p class="text-gray-400 mb-4">
-              Complete online store solutions with payment integration and
-              inventory management
-            </p>
-            <a href="#" class="text-purple-400 hover:text-purple-300 transition"
-              >Learn more <i class="fas fa-arrow-right ml-2"></i
-            ></a>
-          </article>
-
-          <article class="service-card glass-effect rounded-3xl p-8">
-            <div class="text-5xl mb-4">
-              <i class="fas fa-search gradient-text"></i>
-            </div>
-            <h3 class="text-2xl font-bold mb-3">SEO Optimization</h3>
-            <p class="text-gray-400 mb-4">
-              Boost your online visibility and rank higher in search engine
-              results
-            </p>
-            <a href="#" class="text-purple-400 hover:text-purple-300 transition"
-              >Learn more <i class="fas fa-arrow-right ml-2"></i
-            ></a>
-          </article>
-
-          <article class="service-card glass-effect rounded-3xl p-8">
-            <div class="text-5xl mb-4">
-              <i class="fas fa-rocket gradient-text"></i>
-            </div>
-            <h3 class="text-2xl font-bold mb-3">Digital Marketing</h3>
-            <p class="text-gray-400 mb-4">
-              Strategic marketing campaigns to grow your brand and reach your
-              audience
-            </p>
-            <a href="#" class="text-purple-400 hover:text-purple-300 transition"
-              >Learn more <i class="fas fa-arrow-right ml-2"></i
-            ></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="work" class="py-20 px-4 pb-safe">
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-6xl font-bold mb-4">
-            Our <span class="gradient-text">Work</span>
-          </h2>
-          <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-            Showcasing our best projects and success stories
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <article
-            class="glass-effect rounded-3xl overflow-hidden group cursor-pointer"
+          <!-- Call-to-Action Buttons -->
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <div
-              class="h-64 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center"
+            <a
+              href="/contact"
+              class="bg-gradient-to-r from-orange-400 to-purple-500 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:shadow-purple-500/50 transition w-full sm:w-auto"
             >
-              <img
-                src="ecommerce.jpg"
-                alt="E-Commerce Platform Project by Codevani"
-                class="object-cover h-full w-full opacity-10"
-              />
-              <i class="fas fa-image text-6xl text-white/30 absolute"></i>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
-              <p class="text-gray-400">Modern online shopping experience</p>
-            </div>
-          </article>
+              Start Your Project
+            </a>
+            <a
+              href="/demo"
+              class="glass-effect px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition w-full sm:w-auto"
+            >
+              <i class="fas fa-play mr-2" aria-hidden="true"></i> View Demo
+            </a>
+          </div>
 
-          <article
-            class="glass-effect rounded-3xl overflow-hidden group cursor-pointer"
-          >
+          <!-- Stats with Schema.org Markup -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
             <div
-              class="h-64 bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center"
+              class="glass-effect rounded-2xl p-6"
+              itemscope
+              itemtype="https://schema.org/Claim"
             >
-              <img
-                src="healthcare.jpg"
-                alt="Healthcare App Project by Codevani"
-                class="object-cover h-full w-full opacity-10"
-              />
-              <i class="fas fa-image text-6xl text-white/30 absolute"></i>
+              <div
+                class="text-4xl font-bold gradient-text"
+                itemprop="claimReviewed"
+              >
+                500+
+              </div>
+              <div class="text-gray-400 mt-2">Projects Done</div>
             </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Healthcare App</h3>
-              <p class="text-gray-400">Patient-focused mobile application</p>
-            </div>
-          </article>
 
-          <article
-            class="glass-effect rounded-3xl overflow-hidden group cursor-pointer"
-          >
             <div
-              class="h-64 bg-gradient-to-br from-orange-600 to-red-600 flex items-center justify-center"
+              class="glass-effect rounded-2xl p-6"
+              itemscope
+              itemtype="https://schema.org/Claim"
             >
-              <img
-                src="startup.jpg"
-                alt="Startup Website Project by Codevani"
-                class="object-cover h-full w-full opacity-10"
-              />
-              <i class="fas fa-image text-6xl text-white/30 absolute"></i>
+              <div
+                class="text-4xl font-bold gradient-text"
+                itemprop="claimReviewed"
+              >
+                250+
+              </div>
+              <div class="text-gray-400 mt-2">Happy Clients</div>
             </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Startup Website</h3>
+
+            <div
+              class="glass-effect rounded-2xl p-6"
+              itemscope
+              itemtype="https://schema.org/Claim"
+            >
+              <div
+                class="text-4xl font-bold gradient-text"
+                itemprop="claimReviewed"
+              >
+                50+
+              </div>
+              <div class="text-gray-400 mt-2">Team Members</div>
+            </div>
+
+            <div
+              class="glass-effect rounded-2xl p-6"
+              itemscope
+              itemtype="https://schema.org/Claim"
+            >
+              <div
+                class="text-4xl font-bold gradient-text"
+                itemprop="claimReviewed"
+              >
+                15+
+              </div>
+              <div class="text-gray-400 mt-2">Awards Won</div>
+            </div>
+          </div>
+
+          <!-- Optional Hero Image for SEO -->
+          <img
+            src="/assets/images/hero-image.png"
+            alt="Web & App Development by Codevani"
+            class="absolute bottom-0 right-0 w-1/2 max-w-md hidden md:block"
+          />
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-20 px-4 pb-safe">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">
+              Our <span class="gradient-text">Services</span>
+            </h2>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+              Comprehensive digital solutions tailored to elevate your business
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Example of Semantic Article -->
+            <article class="service-card glass-effect rounded-3xl p-8">
+              <div class="text-5xl mb-4">
+                <i class="fas fa-laptop-code gradient-text"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">Web Development</h3>
+              <p class="text-gray-400 mb-4">
+                Custom web applications built with modern technologies like
+                React, Node.js, and more
+              </p>
+              <a
+                href="#"
+                class="text-purple-400 hover:text-purple-300 transition"
+                >Learn more <i class="fas fa-arrow-right ml-2"></i
+              ></a>
+            </article>
+
+            <article class="service-card glass-effect rounded-3xl p-8">
+              <div class="text-5xl mb-4">
+                <i class="fas fa-mobile-alt gradient-text"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">Mobile Apps</h3>
+              <p class="text-gray-400 mb-4">
+                Native and cross-platform mobile applications for iOS and
+                Android devices
+              </p>
+              <a
+                href="#"
+                class="text-purple-400 hover:text-purple-300 transition"
+                >Learn more <i class="fas fa-arrow-right ml-2"></i
+              ></a>
+            </article>
+
+            <article class="service-card glass-effect rounded-3xl p-8">
+              <div class="text-5xl mb-4">
+                <i class="fas fa-paint-brush gradient-text"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">UI/UX Design</h3>
+              <p class="text-gray-400 mb-4">
+                Beautiful, intuitive designs that provide exceptional user
+                experiences
+              </p>
+              <a
+                href="#"
+                class="text-purple-400 hover:text-purple-300 transition"
+                >Learn more <i class="fas fa-arrow-right ml-2"></i
+              ></a>
+            </article>
+
+            <article class="service-card glass-effect rounded-3xl p-8">
+              <div class="text-5xl mb-4">
+                <i class="fas fa-shopping-cart gradient-text"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">E-Commerce</h3>
+              <p class="text-gray-400 mb-4">
+                Complete online store solutions with payment integration and
+                inventory management
+              </p>
+              <a
+                href="#"
+                class="text-purple-400 hover:text-purple-300 transition"
+                >Learn more <i class="fas fa-arrow-right ml-2"></i
+              ></a>
+            </article>
+
+            <article class="service-card glass-effect rounded-3xl p-8">
+              <div class="text-5xl mb-4">
+                <i class="fas fa-search gradient-text"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">SEO Optimization</h3>
+              <p class="text-gray-400 mb-4">
+                Boost your online visibility and rank higher in search engine
+                results
+              </p>
+              <a
+                href="#"
+                class="text-purple-400 hover:text-purple-300 transition"
+                >Learn more <i class="fas fa-arrow-right ml-2"></i
+              ></a>
+            </article>
+
+            <article class="service-card glass-effect rounded-3xl p-8">
+              <div class="text-5xl mb-4">
+                <i class="fas fa-rocket gradient-text"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">Digital Marketing</h3>
+              <p class="text-gray-400 mb-4">
+                Strategic marketing campaigns to grow your brand and reach your
+                audience
+              </p>
+              <a
+                href="#"
+                class="text-purple-400 hover:text-purple-300 transition"
+                >Learn more <i class="fas fa-arrow-right ml-2"></i
+              ></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="work" class="py-20 px-4 pb-safe">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">
+              Our <span class="gradient-text">Work</span>
+            </h2>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+              Showcasing our best projects and success stories
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article
+              class="glass-effect rounded-3xl overflow-hidden group cursor-pointer"
+            >
+              <div
+                class="h-64 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center"
+              >
+                <img
+                  src="ecommerce.jpg"
+                  alt="E-Commerce Platform Project by Codevani"
+                  class="object-cover h-full w-full opacity-10"
+                />
+                <i class="fas fa-image text-6xl text-white/30 absolute"></i>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+                <p class="text-gray-400">Modern online shopping experience</p>
+              </div>
+            </article>
+
+            <article
+              class="glass-effect rounded-3xl overflow-hidden group cursor-pointer"
+            >
+              <div
+                class="h-64 bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center"
+              >
+                <img
+                  src="healthcare.jpg"
+                  alt="Healthcare App Project by Codevani"
+                  class="object-cover h-full w-full opacity-10"
+                />
+                <i class="fas fa-image text-6xl text-white/30 absolute"></i>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Healthcare App</h3>
+                <p class="text-gray-400">Patient-focused mobile application</p>
+              </div>
+            </article>
+
+            <article
+              class="glass-effect rounded-3xl overflow-hidden group cursor-pointer"
+            >
+              <div
+                class="h-64 bg-gradient-to-br from-orange-600 to-red-600 flex items-center justify-center"
+              >
+                <img
+                  src="startup.jpg"
+                  alt="Startup Website Project by Codevani"
+                  class="object-cover h-full w-full opacity-10"
+                />
+                <i class="fas fa-image text-6xl text-white/30 absolute"></i>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Startup Website</h3>
+                <p class="text-gray-400">
+                  Innovative landing page for new startup
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section id="tech-stack" class="py-20 px-4 pb-safe">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">
+              Technologies We <span class="gradient-text">Master</span>
+            </h2>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+              Leveraging cutting-edge technologies to build scalable,
+              high-performance solutions
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <!-- Frontend -->
+            <div class="glass-effect rounded-3xl p-8">
+              <div class="text-4xl mb-4">
+                <i class="fas fa-palette gradient-text"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-6">Frontend Development</h3>
+              <div class="grid grid-cols-3 gap-4">
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fab fa-react text-3xl text-cyan-400"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">React</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fab fa-vuejs text-3xl text-green-400"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">Vue.js</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fab fa-angular text-3xl text-red-400"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">Angular</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="white">
+                      <path
+                        d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"
+                      />
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-400">Next.js</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fab fa-html5 text-3xl text-orange-400"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">HTML5</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fab fa-css3-alt text-3xl text-blue-400"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">CSS3</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="glass-effect rounded-3xl p-8">
+              <div class="text-4xl mb-4">
+                <i class="fas fa-server gradient-text"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-6">Backend Development</h3>
+              <div class="grid grid-cols-3 gap-4">
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fab fa-node-js text-3xl text-green-500"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">Node.js</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fab fa-python text-3xl text-blue-400"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">Python</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fab fa-php text-3xl text-purple-400"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">PHP</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fab fa-java text-3xl text-red-400"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">Java</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fab fa-laravel text-3xl text-red-500"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">Laravel</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fab fa-aws text-3xl text-orange-400"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">AWS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile & Database -->
+            <div class="glass-effect rounded-3xl p-8">
+              <div class="text-4xl mb-4">
+                <i class="fas fa-mobile-alt gradient-text"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-6">Mobile & Database</h3>
+              <div class="grid grid-cols-3 gap-4">
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fab fa-android text-3xl text-green-400"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">Android</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fab fa-apple text-3xl text-gray-300"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">iOS</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="#61DAFB">
+                      <path
+                        d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85S10.13 13 10.13 12c0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 0 1-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74l-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16l-.3-.51m6.54-.76l.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9c-.6 0-1.17 0-1.71.03-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03.6 0 1.17 0 1.71-.03.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74l.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16l.3.51m1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68s-1.83 2.93-4.37 3.68c.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.37-1.95-1.92 1.83-3.91 2.79-5.38 1.95-1.46-.84-1.62-3.05-1-5.63-2.54-.75-4.37-1.99-4.37-3.68s1.83-2.93 4.37-3.68c-.62-2.58-.46-4.79 1-5.63 1.47-.84 3.46.12 5.38 1.95 1.92-1.83 3.91-2.79 5.37-1.95M17.08 12c.34.75.64 1.5.89 2.26 2.1-.63 3.28-1.53 3.28-2.26 0-.73-1.18-1.63-3.28-2.26-.25.76-.55 1.51-.89 2.26M6.92 12c-.34-.75-.64-1.5-.89-2.26-2.1.63-3.28 1.53-3.28 2.26 0 .73 1.18 1.63 3.28 2.26.25-.76.55-1.51.89-2.26m9.22 0l1.5-2.5c-.53-.83-1.09-1.59-1.67-2.29-.72.09-1.47.14-2.26.14s-1.54-.05-2.26-.14c-.58.7-1.14 1.46-1.67 2.29L10.78 12l-1.5 2.5c.53.83 1.09 1.59 1.67 2.29.72-.09 1.47-.14 2.26-.14s1.54.05 2.26.14c.58-.7 1.14-1.46 1.67-2.29L16.14 12z"
+                      />
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-400">React Native</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fas fa-database text-3xl text-blue-400"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">MongoDB</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fas fa-database text-3xl text-orange-400"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">MySQL</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
+                  >
+                    <i class="fas fa-fire text-3xl text-yellow-400"></i>
+                  </div>
+                  <span class="text-sm text-gray-400">Firebase</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Section -->
+      <section
+        class="py-20 px-4 pb-safe bg-gradient-to-b from-black to-purple-900/20"
+      >
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">
+              Our <span class="gradient-text">Development Process</span>
+            </h2>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+              A proven methodology that delivers results every time
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glass-effect rounded-3xl p-8 text-center">
+              <div
+                class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center"
+              >
+                <span class="text-2xl font-bold">1</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Discovery & Planning</h3>
               <p class="text-gray-400">
-                Innovative landing page for new startup
+                Understanding your goals, target audience, and project
+                requirements
               </p>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <!-- Tech Stack Section -->
-    <section id="tech-stack" class="py-20 px-4 pb-safe">
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-6xl font-bold mb-4">
-            Technologies We <span class="gradient-text">Master</span>
-          </h2>
-          <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-            Leveraging cutting-edge technologies to build scalable,
-            high-performance solutions
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <!-- Frontend -->
-          <div class="glass-effect rounded-3xl p-8">
-            <div class="text-4xl mb-4">
-              <i class="fas fa-palette gradient-text"></i>
-            </div>
-            <h3 class="text-2xl font-bold mb-6">Frontend Development</h3>
-            <div class="grid grid-cols-3 gap-4">
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fab fa-react text-3xl text-cyan-400"></i>
-                </div>
-                <span class="text-sm text-gray-400">React</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fab fa-vuejs text-3xl text-green-400"></i>
-                </div>
-                <span class="text-sm text-gray-400">Vue.js</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fab fa-angular text-3xl text-red-400"></i>
-                </div>
-                <span class="text-sm text-gray-400">Angular</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <svg class="w-8 h-8" viewBox="0 0 24 24" fill="white">
-                    <path
-                      d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"
-                    />
-                  </svg>
-                </div>
-                <span class="text-sm text-gray-400">Next.js</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fab fa-html5 text-3xl text-orange-400"></i>
-                </div>
-                <span class="text-sm text-gray-400">HTML5</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fab fa-css3-alt text-3xl text-blue-400"></i>
-                </div>
-                <span class="text-sm text-gray-400">CSS3</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Backend -->
-          <div class="glass-effect rounded-3xl p-8">
-            <div class="text-4xl mb-4">
-              <i class="fas fa-server gradient-text"></i>
-            </div>
-            <h3 class="text-2xl font-bold mb-6">Backend Development</h3>
-            <div class="grid grid-cols-3 gap-4">
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fab fa-node-js text-3xl text-green-500"></i>
-                </div>
-                <span class="text-sm text-gray-400">Node.js</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fab fa-python text-3xl text-blue-400"></i>
-                </div>
-                <span class="text-sm text-gray-400">Python</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fab fa-php text-3xl text-purple-400"></i>
-                </div>
-                <span class="text-sm text-gray-400">PHP</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fab fa-java text-3xl text-red-400"></i>
-                </div>
-                <span class="text-sm text-gray-400">Java</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fab fa-laravel text-3xl text-red-500"></i>
-                </div>
-                <span class="text-sm text-gray-400">Laravel</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fab fa-aws text-3xl text-orange-400"></i>
-                </div>
-                <span class="text-sm text-gray-400">AWS</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Mobile & Database -->
-          <div class="glass-effect rounded-3xl p-8">
-            <div class="text-4xl mb-4">
-              <i class="fas fa-mobile-alt gradient-text"></i>
-            </div>
-            <h3 class="text-2xl font-bold mb-6">Mobile & Database</h3>
-            <div class="grid grid-cols-3 gap-4">
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fab fa-android text-3xl text-green-400"></i>
-                </div>
-                <span class="text-sm text-gray-400">Android</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fab fa-apple text-3xl text-gray-300"></i>
-                </div>
-                <span class="text-sm text-gray-400">iOS</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <svg class="w-8 h-8" viewBox="0 0 24 24" fill="#61DAFB">
-                    <path
-                      d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85S10.13 13 10.13 12c0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 0 1-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74l-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16l-.3-.51m6.54-.76l.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9c-.6 0-1.17 0-1.71.03-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03.6 0 1.17 0 1.71-.03.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74l.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16l.3.51m1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68s-1.83 2.93-4.37 3.68c.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.37-1.95-1.92 1.83-3.91 2.79-5.38 1.95-1.46-.84-1.62-3.05-1-5.63-2.54-.75-4.37-1.99-4.37-3.68s1.83-2.93 4.37-3.68c-.62-2.58-.46-4.79 1-5.63 1.47-.84 3.46.12 5.38 1.95 1.92-1.83 3.91-2.79 5.37-1.95M17.08 12c.34.75.64 1.5.89 2.26 2.1-.63 3.28-1.53 3.28-2.26 0-.73-1.18-1.63-3.28-2.26-.25.76-.55 1.51-.89 2.26M6.92 12c-.34-.75-.64-1.5-.89-2.26-2.1.63-3.28 1.53-3.28 2.26 0 .73 1.18 1.63 3.28 2.26.25-.76.55-1.51.89-2.26m9.22 0l1.5-2.5c-.53-.83-1.09-1.59-1.67-2.29-.72.09-1.47.14-2.26.14s-1.54-.05-2.26-.14c-.58.7-1.14 1.46-1.67 2.29L10.78 12l-1.5 2.5c.53.83 1.09 1.59 1.67 2.29.72-.09 1.47-.14 2.26-.14s1.54.05 2.26.14c.58-.7 1.14-1.46 1.67-2.29L16.14 12z"
-                    />
-                  </svg>
-                </div>
-                <span class="text-sm text-gray-400">React Native</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fas fa-database text-3xl text-blue-400"></i>
-                </div>
-                <span class="text-sm text-gray-400">MongoDB</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fas fa-database text-3xl text-orange-400"></i>
-                </div>
-                <span class="text-sm text-gray-400">MySQL</span>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div
-                  class="w-16 h-16 glass-effect rounded-xl flex items-center justify-center"
-                >
-                  <i class="fas fa-fire text-3xl text-yellow-400"></i>
-                </div>
-                <span class="text-sm text-gray-400">Firebase</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process Section -->
-    <section
-      class="py-20 px-4 pb-safe bg-gradient-to-b from-black to-purple-900/20"
-    >
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-6xl font-bold mb-4">
-            Our <span class="gradient-text">Development Process</span>
-          </h2>
-          <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-            A proven methodology that delivers results every time
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="glass-effect rounded-3xl p-8 text-center">
-            <div
-              class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center"
-            >
-              <span class="text-2xl font-bold">1</span>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Discovery & Planning</h3>
-            <p class="text-gray-400">
-              Understanding your goals, target audience, and project
-              requirements
-            </p>
-          </div>
-
-          <div class="glass-effect rounded-3xl p-8 text-center">
-            <div
-              class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center"
-            >
-              <span class="text-2xl font-bold">2</span>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Design & Prototype</h3>
-            <p class="text-gray-400">
-              Creating wireframes, mockups, and interactive prototypes for
-              approval
-            </p>
-          </div>
-
-          <div class="glass-effect rounded-3xl p-8 text-center">
-            <div
-              class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center"
-            >
-              <span class="text-2xl font-bold">3</span>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Development & Testing</h3>
-            <p class="text-gray-400">
-              Building your solution with clean code and rigorous quality
-              testing
-            </p>
-          </div>
-
-          <div class="glass-effect rounded-3xl p-8 text-center">
-            <div
-              class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center"
-            >
-              <span class="text-2xl font-bold">4</span>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Launch & Support</h3>
-            <p class="text-gray-400">
-              Deploying your project and providing ongoing maintenance and
-              updates
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="py-20 px-4">
-      <div class="max-w-7xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-center">
-          What Our <span class="gradient-text">Clients Say</span>
-        </h2>
-        <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-          Don't just take our word for it - hear from clients who've experienced
-          the Codevani difference
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- Testimonial 1 -->
-          <div class="glass-effect rounded-2xl p-6">
-            <div class="flex gap-1 mb-4">
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-            </div>
-            <p class="text-gray-400 mb-4">
-              "Codevani transformed our outdated platform into a modern,
-              user-friendly solution. The team's expertise and dedication
-              exceeded our expectations."
-            </p>
-            <div class="flex items-center gap-3">
+            <div class="glass-effect rounded-3xl p-8 text-center">
               <div
-                class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center"
+                class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center"
               >
-                <i class="fas fa-user text-white"></i>
+                <span class="text-2xl font-bold">2</span>
               </div>
-              <div>
-                <p class="font-semibold">Rajesh Kumar</p>
-                <p class="text-sm text-gray-500">CEO, TechStart</p>
-              </div>
+              <h3 class="text-xl font-bold mb-3">Design & Prototype</h3>
+              <p class="text-gray-400">
+                Creating wireframes, mockups, and interactive prototypes for
+                approval
+              </p>
             </div>
-          </div>
 
-          <!-- Testimonial 2 -->
-          <div class="glass-effect rounded-2xl p-6">
-            <div class="flex gap-1 mb-4">
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-            </div>
-            <p class="text-gray-400 mb-4">
-              "The mobile app they developed has been a game-changer for our
-              business. User engagement increased by 300% within the first
-              month!"
-            </p>
-            <div class="flex items-center gap-3">
+            <div class="glass-effect rounded-3xl p-8 text-center">
               <div
-                class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center"
+                class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center"
               >
-                <i class="fas fa-user text-white"></i>
+                <span class="text-2xl font-bold">3</span>
               </div>
-              <div>
-                <p class="font-semibold">Priya Sharma</p>
-                <p class="text-sm text-gray-500">Founder, ShopEasy</p>
-              </div>
+              <h3 class="text-xl font-bold mb-3">Development & Testing</h3>
+              <p class="text-gray-400">
+                Building your solution with clean code and rigorous quality
+                testing
+              </p>
             </div>
-          </div>
 
-          <!-- Testimonial 3 -->
-          <div class="glass-effect rounded-2xl p-6">
-            <div class="flex gap-1 mb-4">
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-              <i class="fas fa-star text-yellow-400"></i>
-            </div>
-            <p class="text-gray-400 mb-4">
-              "Professional, responsive, and incredibly talented. Codevani
-              delivered our project on time and within budget. Highly
-              recommended!"
-            </p>
-            <div class="flex items-center gap-3">
+            <div class="glass-effect rounded-3xl p-8 text-center">
               <div
-                class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center"
+                class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-orange-400 to-purple-500 flex items-center justify-center"
               >
-                <i class="fas fa-user text-white"></i>
+                <span class="text-2xl font-bold">4</span>
               </div>
-              <div>
-                <p class="font-semibold">Arjun Patel</p>
-                <p class="text-sm text-gray-500">CTO, FinanceHub</p>
-              </div>
+              <h3 class="text-xl font-bold mb-3">Launch & Support</h3>
+              <p class="text-gray-400">
+                Deploying your project and providing ongoing maintenance and
+                updates
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- FAQ Section -->
-    <section class="py-20 px-4 pb-safe">
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-6xl font-bold mb-4">
-            Frequently Asked <span class="gradient-text">Questions</span>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6 text-center">
+            What Our <span class="gradient-text">Clients Say</span>
           </h2>
-          <p class="text-gray-400 text-lg">
-            Everything you need to know about working with Codevani
+          <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+            Don't just take our word for it - hear from clients who've
+            experienced the Codevani difference
           </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Testimonial 1 -->
+            <div class="glass-effect rounded-2xl p-6">
+              <div class="flex gap-1 mb-4">
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+              </div>
+              <p class="text-gray-400 mb-4">
+                "Codevani transformed our outdated platform into a modern,
+                user-friendly solution. The team's expertise and dedication
+                exceeded our expectations."
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center"
+                >
+                  <i class="fas fa-user text-white"></i>
+                </div>
+                <div>
+                  <p class="font-semibold">Rajesh Kumar</p>
+                  <p class="text-sm text-gray-500">CEO, TechStart</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="glass-effect rounded-2xl p-6">
+              <div class="flex gap-1 mb-4">
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+              </div>
+              <p class="text-gray-400 mb-4">
+                "The mobile app they developed has been a game-changer for our
+                business. User engagement increased by 300% within the first
+                month!"
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center"
+                >
+                  <i class="fas fa-user text-white"></i>
+                </div>
+                <div>
+                  <p class="font-semibold">Priya Sharma</p>
+                  <p class="text-sm text-gray-500">Founder, ShopEasy</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="glass-effect rounded-2xl p-6">
+              <div class="flex gap-1 mb-4">
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+              </div>
+              <p class="text-gray-400 mb-4">
+                "Professional, responsive, and incredibly talented. Codevani
+                delivered our project on time and within budget. Highly
+                recommended!"
+              </p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center"
+                >
+                  <i class="fas fa-user text-white"></i>
+                </div>
+                <div>
+                  <p class="font-semibold">Arjun Patel</p>
+                  <p class="text-sm text-gray-500">CTO, FinanceHub</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="space-y-4">
-          <details class="glass-effect rounded-2xl p-6 group">
-            <summary
-              class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
-            >
-              <span>How long does it take to develop a website?</span>
-              <i
-                class="fas fa-chevron-down group-open:rotate-180 transition-transform"
-              ></i>
-            </summary>
-            <p class="text-gray-400 mt-4 pl-2">
-              The timeline varies based on project complexity. A basic website
-              takes 2-4 weeks, while complex web applications can take 2-6
-              months. We provide detailed timelines during the discovery phase.
+      </section>
+      <!-- FAQ Section -->
+      <section class="py-20 px-4 pb-safe">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">
+              Frequently Asked <span class="gradient-text">Questions</span>
+            </h2>
+            <p class="text-gray-400 text-lg">
+              Everything you need to know about working with Codevani
             </p>
-          </details>
+          </div>
 
-          <details class="glass-effect rounded-2xl p-6 group">
-            <summary
-              class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
-            >
-              <span>What is your development process?</span>
-              <i
-                class="fas fa-chevron-down group-open:rotate-180 transition-transform"
-              ></i>
-            </summary>
-            <p class="text-gray-400 mt-4 pl-2">
-              We follow an agile methodology with four key phases: Discovery &
-              Planning, Design & Prototype, Development & Testing, and Launch &
-              Support. You'll receive regular updates and have opportunities to
-              provide feedback throughout.
-            </p>
-          </details>
+          <div class="space-y-4">
+            <details class="glass-effect rounded-2xl p-6 group">
+              <summary
+                class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
+              >
+                <span>How long does it take to develop a website?</span>
+                <i
+                  class="fas fa-chevron-down group-open:rotate-180 transition-transform"
+                ></i>
+              </summary>
+              <p class="text-gray-400 mt-4 pl-2">
+                The timeline varies based on project complexity. A basic website
+                takes 2-4 weeks, while complex web applications can take 2-6
+                months. We provide detailed timelines during the discovery
+                phase.
+              </p>
+            </details>
 
-          <details class="glass-effect rounded-2xl p-6 group">
-            <summary
-              class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
-            >
-              <span>Do you provide ongoing support and maintenance?</span>
-              <i
-                class="fas fa-chevron-down group-open:rotate-180 transition-transform"
-              ></i>
-            </summary>
-            <p class="text-gray-400 mt-4 pl-2">
-              Yes, we offer comprehensive maintenance packages including
-              security updates, bug fixes, performance optimization, and feature
-              enhancements. We're here to ensure your digital solution continues
-              to perform optimally.
-            </p>
-          </details>
+            <details class="glass-effect rounded-2xl p-6 group">
+              <summary
+                class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
+              >
+                <span>What is your development process?</span>
+                <i
+                  class="fas fa-chevron-down group-open:rotate-180 transition-transform"
+                ></i>
+              </summary>
+              <p class="text-gray-400 mt-4 pl-2">
+                We follow an agile methodology with four key phases: Discovery &
+                Planning, Design & Prototype, Development & Testing, and Launch
+                & Support. You'll receive regular updates and have opportunities
+                to provide feedback throughout.
+              </p>
+            </details>
 
-          <details class="glass-effect rounded-2xl p-6 group">
-            <summary
-              class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
-            >
-              <span>What technologies do you specialize in?</span>
-              <i
-                class="fas fa-chevron-down group-open:rotate-180 transition-transform"
-              ></i>
-            </summary>
-            <p class="text-gray-400 mt-4 pl-2">
-              We specialize in modern web technologies including React, Next.js,
-              Node.js, Python, and mobile development with React Native. We
-              choose the best technology stack based on your specific project
-              requirements.
-            </p>
-          </details>
+            <details class="glass-effect rounded-2xl p-6 group">
+              <summary
+                class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
+              >
+                <span>Do you provide ongoing support and maintenance?</span>
+                <i
+                  class="fas fa-chevron-down group-open:rotate-180 transition-transform"
+                ></i>
+              </summary>
+              <p class="text-gray-400 mt-4 pl-2">
+                Yes, we offer comprehensive maintenance packages including
+                security updates, bug fixes, performance optimization, and
+                feature enhancements. We're here to ensure your digital solution
+                continues to perform optimally.
+              </p>
+            </details>
 
-          <details class="glass-effect rounded-2xl p-6 group">
-            <summary
-              class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
-            >
-              <span>How much does a custom website cost?</span>
-              <i
-                class="fas fa-chevron-down group-open:rotate-180 transition-transform"
-              ></i>
-            </summary>
-            <p class="text-gray-400 mt-4 pl-2">
-              Project costs vary based on scope, features, and complexity. Basic
-              websites start from ₹50,000, while complex web applications can
-              range from ₹2,00,000 to ₹10,00,000+. We provide detailed quotes
-              after understanding your requirements.
-            </p>
-          </details>
+            <details class="glass-effect rounded-2xl p-6 group">
+              <summary
+                class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
+              >
+                <span>What technologies do you specialize in?</span>
+                <i
+                  class="fas fa-chevron-down group-open:rotate-180 transition-transform"
+                ></i>
+              </summary>
+              <p class="text-gray-400 mt-4 pl-2">
+                We specialize in modern web technologies including React,
+                Next.js, Node.js, Python, and mobile development with React
+                Native. We choose the best technology stack based on your
+                specific project requirements.
+              </p>
+            </details>
+
+            <details class="glass-effect rounded-2xl p-6 group">
+              <summary
+                class="font-semibold text-lg cursor-pointer list-none flex items-center justify-between"
+              >
+                <span>How much does a custom website cost?</span>
+                <i
+                  class="fas fa-chevron-down group-open:rotate-180 transition-transform"
+                ></i>
+              </summary>
+              <p class="text-gray-400 mt-4 pl-2">
+                Project costs vary based on scope, features, and complexity.
+                Basic websites start from ₹50,000, while complex web
+                applications can range from ₹2,00,000 to ₹10,00,000+. We provide
+                detailed quotes after understanding your requirements.
+              </p>
+            </details>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CTA Section -->
-    <!-- <section class="py-20 px-4 pb-safe">
+      <!-- CTA Section -->
+      <!-- <section class="py-20 px-4 pb-safe">
       <div class="max-w-5xl mx-auto glass-effect rounded-3xl p-12 text-center">
         <h2 class="text-4xl md:text-5xl font-bold mb-6">
           Ready to Transform Your <span class="gradient-text">Digital Presence?</span>
@@ -981,132 +1180,122 @@
       </div>
     </section> -->
 
-    <!-- Contact Form Section -->
-    <section id="contact" class="py-20 px-4 pb-safe">
-      <div class="max-w-5xl mx-auto">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl md:text-5xl font-bold mb-6">
-            Let's Build Something <span class="gradient-text">Amazing</span>
-          </h2>
-          <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-            Fill out the form below and we'll get back to you within 24 hours
-          </p>
-        </div>
+      <!-- Contact Form Section -->
+      <section id="contact" class="py-20 px-4 pb-safe">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+              Let's Build Something <span class="gradient-text">Amazing</span>
+            </h2>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+              Fill out the form below and we'll get back to you within 24 hours
+            </p>
+          </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-1 gap-8">
-          <div class="glass-effect rounded-3xl p-8">
-            <form class="space-y-6" id="contactForm">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div>
-                  <label class="block text-sm font-medium mb-2"
-                    >First Name *</label
-                  >
-                  <input
-                    type="text"
-                    required
-                    class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
-                    placeholder="John"
-                  />
-                </div>
-                <div>
-                  <label class="block text-sm font-medium mb-2"
-                    >Email Address *</label
-                  >
-                  <input
-                    type="email"
-                    required
-                    class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
-                    placeholder="john@example.com"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label class="block text-sm font-medium mb-2"
-                  >Phone Number</label
-                >
-                <input
-                  type="tel"
-                  class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
-                  placeholder="+91 98765 43210"
-                />
-              </div>
-
-              <!-- <div>
-                <label class="block text-sm font-medium mb-2"
-                  >Service Interested In *</label
-                >
-                <select
-                  required
-                  class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
-                >
-                  <option value="">Select a service</option>
-                  <option value="web">Web Development</option>
-                  <option value="mobile">Mobile App Development</option>
-                  <option value="uiux">UI/UX Design</option>
-                  <option value="ecommerce">E-Commerce Solutions</option>
-                  <option value="seo">SEO Optimization</option>
-                  <option value="marketing">Digital Marketing</option>
-                </select>
-              </div> -->
-
-              <div>
-                <label class="block text-sm font-medium mb-2">Message</label>
-                <textarea
-                  required
-                  rows="4"
-                  class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition resize-none"
-                  placeholder="Tell us about your thought..."
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                class="w-full bg-gradient-to-r from-orange-400 to-purple-500 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:shadow-purple-500/50 transition"
+          <div class="grid grid-cols-1 lg:grid-cols-1 gap-8">
+            <div class="glass-effect rounded-3xl p-8">
+              <p id="formMsg" class="text-center mt-4 text-sm"></p>
+              <form
+                id="contactForm"
+                class="space-y-6 w-full p-8 rounded-2xl shadow-lg .glass-effect"
               >
-                <i class="fas fa-paper-plane mr-2"></i> Send Message
-              </button>
-            </form>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label class="block text-sm font-medium mb-2"
+                      >First Name *</label
+                    >
+                    <input
+                      type="text"
+                      name="name"
+                      class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
+                      placeholder="John"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium mb-2"
+                      >Email Address *</label
+                    >
+                    <input
+                      type="email"
+                      name="email"
+                      class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
+                      placeholder="john@example.com"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium mb-2"
+                    >Phone Number *</label
+                  >
+                  <input
+                    type="tel"
+                    name="phone"
+                    class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition"
+                    placeholder="+91 98765 43210"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium mb-2">Message</label>
+                  <textarea
+                    name="message"
+                    rows="4"
+                    class="w-full bg-white/5 border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 transition resize-none"
+                    placeholder="Tell us about your thought..."
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-gradient-to-r from-orange-400 to-purple-500 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:shadow-purple-500/50 transition"
+                >
+                  <i class="fas fa-paper-plane mr-2"></i> Send Message
+                </button>
+
+                <p id="formMsg" class="text-center mt-4 text-sm"></p>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="border-t border-gray-800 py-8 px-4 pb-24 md:pb-8">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-               <span class="gradient-text flex items-center">
-                <img
-                  src="./assets/img/logo.svg"
-                  style="width: 120px"
-                  alt="Codevani – Web, App Development & Digital Branding Agency"
-                  title="Codevani – Expert in Website, App Development, Branding & Online Solutions"
-                />
-                </span>
+            <span class="gradient-text flex items-center">
+              <img
+                src="./assets/img/logo.svg"
+                style="width: 120px"
+                alt="Codevani – Web, App Development & Digital Branding Agency"
+                title="Codevani – Expert in Website, App Development, Branding & Online Solutions"
+              />
+            </span>
             <!-- <div class="text-2xl font-bold mb-4">
               <span class="gradient-text">Codevani</span>
             </div> -->
             <p class="text-gray-400">
-              Creating digital experiences that matter
+              Crafting impactful digital experiences that drive growth,
+              engagement, and success for your business online.
             </p>
           </div>
           <div>
             <h4 class="font-bold mb-4">Services</h4>
             <ul class="space-y-2 text-gray-400">
               <li>
-                <a href="#" class="hover:text-purple-400 transition"
-                  >Web Development</a
+                <a
+                  href="development.html"
+                  class="hover:text-purple-400 transition"
+                  >Development</a
                 >
               </li>
               <li>
-                <a href="#" class="hover:text-purple-400 transition"
-                  >Mobile Apps</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-purple-400 transition"
+                <a
+                  href="graphic-design.html"
+                  class="hover:text-purple-400 transition"
                   >UI/UX Design</a
                 >
               </li>
@@ -1116,7 +1305,7 @@
             <h4 class="font-bold mb-4">Company</h4>
             <ul class="space-y-2 text-gray-400">
               <li>
-                <a href="#" class="hover:text-purple-400 transition"
+                <a href="about.html" class="hover:text-purple-400 transition"
                   >About Us</a
                 >
               </li>
@@ -1124,30 +1313,38 @@
                 <a href="#" class="hover:text-purple-400 transition">Careers</a>
               </li>
               <li>
-                <a href="#" class="hover:text-purple-400 transition">Blog</a>
+                <a href="blog.html" class="hover:text-purple-400 transition"
+                  >Blog</a
+                >
               </li>
             </ul>
           </div>
           <div>
             <h4 class="font-bold mb-4">Follow Us</h4>
             <div class="flex gap-4">
-              <a href="#" class="text-2xl hover:text-purple-400 transition"
+              <!-- <a href="#" class="text-2xl hover:text-purple-400 transition"
                 ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="#" class="text-2xl hover:text-purple-400 transition"
+              ></a> -->
+              <a
+                href="https://x.com/codevani_"
+                class="text-2xl hover:text-purple-400 transition"
                 ><i class="fab fa-twitter"></i
               ></a>
-              <a href="#" class="text-2xl hover:text-purple-400 transition"
+              <a
+                href="https://www.instagram.com/codevani_"
+                class="text-2xl hover:text-purple-400 transition"
                 ><i class="fab fa-instagram"></i
               ></a>
-              <a href="#" class="text-2xl hover:text-purple-400 transition"
+              <a
+                href="https://www.linkedin.com/in/codenavi-company-4539a338a"
+                class="text-2xl hover:text-purple-400 transition"
                 ><i class="fab fa-linkedin"></i
               ></a>
             </div>
           </div>
         </div>
         <div class="text-center text-gray-400 pt-8 border-t border-gray-800">
-          <p>&copy; 2025 RWT Creative Agency. All rights reserved.</p>
+          <p>&copy; 2025 Codevani Creative Agency. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -1187,42 +1384,12 @@
       </div>
     </nav>
 
-    <script>
-      // Bottom navigation active state
-      const navItems = document.querySelectorAll(".nav-item");
-      const sections = document.querySelectorAll("section");
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-      window.addEventListener("scroll", () => {
-        let current = "";
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          if (pageYOffset >= sectionTop - 200) {
-            current = section.getAttribute("id");
-          }
-        });
+    <!-- jQuery Validation -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
 
-        navItems.forEach((item) => {
-          item.classList.remove("active");
-          if (item.getAttribute("href") === `#${current}`) {
-            item.classList.add("active");
-          }
-        });
-      });
-
-      // Smooth scroll
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }
-        });
-      });
-    </script>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>

@@ -132,7 +132,7 @@
       }
     </style>
   </head>
-  <body class="bg-white text-gray-900">
+  <body class="bg-black text-white overflow-x-hidden">
     <!-- Reading Progress Bar -->
     <div id="progressBar" class="progress-bar" style="width: 0%"></div>
 
@@ -182,12 +182,12 @@
       </div>
     </nav>
     <!-- Mobile Header -->
-    <div class="md:hidden fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+    <div class="md:hidden fixed top-0 left-0 right-0 z-50 bg-zinc-900/95 backdrop-blur-md border-b border-zinc-800">
       <div class="flex items-center justify-between px-4 py-4">
         <div class="text-xl font-bold">
           <span class="gradient-text">Codevani</span>
         </div>
-        <a href="blog.html" class="back-button text-gray-600 hover:text-gray-900 transition">
+        <a href="blog.html" class="back-button text-gray-400 hover:text-white transition">
           <i class="fas fa-arrow-left text-xl"></i>
         </a>
       </div>
@@ -197,48 +197,48 @@
     <header class="pt-32 md:pt-28 pb-12 px-4">
       <div class="max-w-4xl mx-auto">
         <div class="flex flex-wrap gap-3 mb-6">
-          <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">
+          <span class="glass-effect px-4 py-2 rounded-full text-sm font-medium text-purple-400">
             Web Development
           </span>
-          <span class="bg-gray-100 text-gray-600 px-4 py-2 rounded-full text-sm">
+          <span class="glass-effect px-4 py-2 rounded-full text-sm text-gray-400">
             <i class="far fa-clock mr-1"></i> 10 min read
           </span>
-          <span class="bg-gray-100 text-gray-600 px-4 py-2 rounded-full text-sm">
+          <span class="glass-effect px-4 py-2 rounded-full text-sm text-gray-400">
             <i class="far fa-calendar mr-1"></i> October 12, 2025
           </span>
         </div>
         
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-          The Future of Web Development: Trends to Watch in 2025
+          The Future of Web Development: Trends to Watch in <span class="gradient-text">2025</span>
         </h1>
         
-        <p class="text-xl md:text-2xl text-gray-600 mb-8">
+        <p class="text-xl md:text-2xl text-gray-400 mb-8">
           Explore the latest trends shaping the web development landscape, from AI-powered tools to progressive web apps and beyond.
         </p>
 
         <!-- Author Info -->
-        <div class="flex items-center gap-4 mb-8 pb-8 border-b border-gray-200">
+        <div class="flex items-center gap-4 mb-8 pb-8 border-b border-zinc-800">
           <div class="w-16 h-16 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center">
             <i class="fas fa-user text-white text-xl"></i>
           </div>
           <div>
             <p class="font-semibold text-lg">Amit Patel</p>
-            <p class="text-gray-600">Senior Web Developer at Codevani</p>
+            <p class="text-gray-400">Senior Web Developer at Codevani</p>
           </div>
         </div>
 
         <!-- Share Buttons -->
         <div class="flex flex-wrap gap-3">
-          <button class="share-button bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
-            <i class="fab fa-facebook mr-2"></i> Share
+          <button class="share-button glass-effect px-6 py-3 rounded-full font-medium hover:bg-white/10 transition">
+            <i class="fab fa-facebook mr-2 text-blue-400"></i> Share
           </button>
-          <button class="share-button bg-sky-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-sky-600 transition">
-            <i class="fab fa-twitter mr-2"></i> Tweet
+          <button class="share-button glass-effect px-6 py-3 rounded-full font-medium hover:bg-white/10 transition">
+            <i class="fab fa-twitter mr-2 text-sky-400"></i> Tweet
           </button>
-          <button class="share-button bg-blue-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition">
-            <i class="fab fa-linkedin mr-2"></i> Share
+          <button class="share-button glass-effect px-6 py-3 rounded-full font-medium hover:bg-white/10 transition">
+            <i class="fab fa-linkedin mr-2 text-blue-500"></i> Share
           </button>
-          <button class="share-button bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition">
+          <button class="share-button glass-effect px-6 py-3 rounded-full font-medium hover:bg-white/10 transition">
             <i class="fas fa-link mr-2"></i> Copy Link
           </button>
         </div>
@@ -248,9 +248,9 @@
     <!-- Featured Image -->
     <section class="px-4 mb-12">
       <div class="max-w-6xl mx-auto">
-        <div class="rounded-3xl overflow-hidden shadow-custom">
+        <div class="rounded-3xl overflow-hidden glass-effect">
           <div class="h-96 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
-            <i class="fas fa-code text-9xl text-white/30"></i>
+            <i class="fas fa-code text-9xl text-white/30 animate-float"></i>
           </div>
         </div>
       </div>
@@ -262,17 +262,17 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <!-- Table of Contents (Desktop) -->
           <aside class="hidden lg:block lg:col-span-3">
-            <div class="sticky-toc bg-gray-50 rounded-2xl p-6 border border-gray-200">
-              <h3 class="font-bold text-lg mb-4 text-gray-900">Table of Contents</h3>
+            <div class="sticky-toc glass-effect rounded-2xl p-6">
+              <h3 class="font-bold text-lg mb-4">Table of Contents</h3>
               <nav>
                 <ul class="space-y-2">
-                  <li><a href="#intro" class="toc-item block py-2 text-gray-600 hover:text-purple-600 transition rounded">Introduction</a></li>
-                  <li><a href="#ai-tools" class="toc-item block py-2 text-gray-600 hover:text-purple-600 transition rounded">AI-Powered Development</a></li>
-                  <li><a href="#pwa" class="toc-item block py-2 text-gray-600 hover:text-purple-600 transition rounded">Progressive Web Apps</a></li>
-                  <li><a href="#webassembly" class="toc-item block py-2 text-gray-600 hover:text-purple-600 transition rounded">WebAssembly</a></li>
-                  <li><a href="#serverless" class="toc-item block py-2 text-gray-600 hover:text-purple-600 transition rounded">Serverless Architecture</a></li>
-                  <li><a href="#frameworks" class="toc-item block py-2 text-gray-600 hover:text-purple-600 transition rounded">Modern Frameworks</a></li>
-                  <li><a href="#conclusion" class="toc-item block py-2 text-gray-600 hover:text-purple-600 transition rounded">Conclusion</a></li>
+                  <li><a href="#intro" class="toc-item block py-2 text-gray-400 hover:text-purple-400 transition rounded">Introduction</a></li>
+                  <li><a href="#ai-tools" class="toc-item block py-2 text-gray-400 hover:text-purple-400 transition rounded">AI-Powered Development</a></li>
+                  <li><a href="#pwa" class="toc-item block py-2 text-gray-400 hover:text-purple-400 transition rounded">Progressive Web Apps</a></li>
+                  <li><a href="#webassembly" class="toc-item block py-2 text-gray-400 hover:text-purple-400 transition rounded">WebAssembly</a></li>
+                  <li><a href="#serverless" class="toc-item block py-2 text-gray-400 hover:text-purple-400 transition rounded">Serverless Architecture</a></li>
+                  <li><a href="#frameworks" class="toc-item block py-2 text-gray-400 hover:text-purple-400 transition rounded">Modern Frameworks</a></li>
+                  <li><a href="#conclusion" class="toc-item block py-2 text-gray-400 hover:text-purple-400 transition rounded">Conclusion</a></li>
                 </ul>
               </nav>
             </div>
@@ -282,7 +282,7 @@
           <div class="lg:col-span-9">
             <div class="max-w-4xl article-content">
               <section id="intro">
-                <p class="text-xl text-gray-700 font-medium mb-6">
+                <p class="text-xl text-gray-300 font-medium mb-6">
                   The web development landscape is evolving at an unprecedented pace. As we navigate through 2025, developers and businesses must stay ahead of emerging trends to remain competitive and deliver exceptional digital experiences.
                 </p>
 
@@ -400,45 +400,45 @@
                   As we look ahead, the key to success lies not just in adopting new technologies, but in understanding how they fit into your specific use cases and business objectives. The future of web development is bright, and these trends are just the beginning of what's possible.
                 </p>
 
-                <p class="text-lg font-medium text-gray-900 mt-8">
+                <p class="text-lg font-medium text-white mt-8">
                   What trends are you most excited about? Share your thoughts in the comments below!
                 </p>
               </section>
 
               <!-- Tags -->
-              <div class="mt-12 pt-8 border-t border-gray-200">
+              <div class="mt-12 pt-8 border-t border-zinc-800">
                 <h3 class="font-bold text-lg mb-4">Tags</h3>
                 <div class="flex flex-wrap gap-2">
-                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#WebDevelopment</span>
-                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#AI</span>
-                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#PWA</span>
-                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#WebAssembly</span>
-                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#Serverless</span>
-                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#JavaScript</span>
-                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#React</span>
-                  <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">#Vue</span>
+                  <span class="glass-effect px-4 py-2 rounded-full text-sm text-purple-400">#WebDevelopment</span>
+                  <span class="glass-effect px-4 py-2 rounded-full text-sm text-purple-400">#AI</span>
+                  <span class="glass-effect px-4 py-2 rounded-full text-sm text-purple-400">#PWA</span>
+                  <span class="glass-effect px-4 py-2 rounded-full text-sm text-purple-400">#WebAssembly</span>
+                  <span class="glass-effect px-4 py-2 rounded-full text-sm text-purple-400">#Serverless</span>
+                  <span class="glass-effect px-4 py-2 rounded-full text-sm text-purple-400">#JavaScript</span>
+                  <span class="glass-effect px-4 py-2 rounded-full text-sm text-purple-400">#React</span>
+                  <span class="glass-effect px-4 py-2 rounded-full text-sm text-purple-400">#Vue</span>
                 </div>
               </div>
 
               <!-- Author Bio -->
-              <div class="mt-12 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-100">
+              <div class="mt-12 glass-effect rounded-2xl p-8 border border-purple-500/20">
                 <div class="flex items-start gap-6">
                   <div class="w-20 h-20 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center flex-shrink-0">
                     <i class="fas fa-user text-white text-2xl"></i>
                   </div>
                   <div>
                     <h3 class="font-bold text-xl mb-2">About Amit Patel</h3>
-                    <p class="text-gray-600 mb-4">
+                    <p class="text-gray-400 mb-4">
                       Amit is a Senior Web Developer at Codevani with over 10 years of experience in building scalable web applications. He specializes in modern JavaScript frameworks and cloud architecture, and is passionate about sharing knowledge with the developer community.
                     </p>
                     <div class="flex gap-3">
-                      <a href="#" class="text-gray-600 hover:text-purple-600 transition">
+                      <a href="#" class="text-gray-400 hover:text-purple-400 transition">
                         <i class="fab fa-twitter text-xl"></i>
                       </a>
-                      <a href="#" class="text-gray-600 hover:text-purple-600 transition">
+                      <a href="#" class="text-gray-400 hover:text-purple-400 transition">
                         <i class="fab fa-linkedin text-xl"></i>
                       </a>
-                      <a href="#" class="text-gray-600 hover:text-purple-600 transition">
+                      <a href="#" class="text-gray-400 hover:text-purple-400 transition">
                         <i class="fab fa-github text-xl"></i>
                       </a>
                     </div>
@@ -452,7 +452,7 @@
     </article>
 
     <!-- Related Articles -->
-    <section class="py-16 px-4 bg-gray-50">
+    <section class="py-16 px-4">
       <div class="max-w-7xl mx-auto">
         <h2 class="text-3xl font-bold mb-8">
           Related <span class="gradient-text">Articles</span>
@@ -460,45 +460,51 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Related Post 1 -->
-          <article class="related-card bg-white rounded-2xl overflow-hidden shadow-custom border border-gray-100">
-            <div class="h-48 bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center">
-              <i class="fas fa-mobile-alt text-5xl text-white/30"></i>
+          <article class="related-card glass-effect rounded-2xl overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center overflow-hidden">
+              <div class="blog-image w-full h-full flex items-center justify-center">
+                <i class="fas fa-mobile-alt text-5xl text-white/30"></i>
+              </div>
             </div>
             <div class="p-6">
-              <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-medium">Mobile Apps</span>
+              <span class="glass-effect px-3 py-1 rounded-full text-xs text-purple-400 font-medium">Mobile Apps</span>
               <h3 class="text-xl font-bold mt-3 mb-2">Building Cross-Platform Apps with React Native</h3>
-              <p class="text-gray-600 text-sm mb-4">Learn how to create stunning mobile applications that work seamlessly on both iOS and Android...</p>
-              <a href="#" class="text-purple-600 hover:text-purple-700 font-medium text-sm inline-flex items-center gap-2">
+              <p class="text-gray-400 text-sm mb-4">Learn how to create stunning mobile applications that work seamlessly on both iOS and Android...</p>
+              <a href="#" class="text-purple-400 hover:text-purple-300 font-medium text-sm inline-flex items-center gap-2">
                 Read More <i class="fas fa-arrow-right"></i>
               </a>
             </div>
           </article>
 
           <!-- Related Post 2 -->
-          <article class="related-card bg-white rounded-2xl overflow-hidden shadow-custom border border-gray-100">
-            <div class="h-48 bg-gradient-to-br from-green-600 to-teal-600 flex items-center justify-center">
-              <i class="fas fa-paint-brush text-5xl text-white/30"></i>
+          <article class="related-card glass-effect rounded-2xl overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-green-600 to-teal-600 flex items-center justify-center overflow-hidden">
+              <div class="blog-image w-full h-full flex items-center justify-center">
+                <i class="fas fa-paint-brush text-5xl text-white/30"></i>
+              </div>
             </div>
             <div class="p-6">
-              <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-medium">UI/UX Design</span>
+              <span class="glass-effect px-3 py-1 rounded-full text-xs text-purple-400 font-medium">UI/UX Design</span>
               <h3 class="text-xl font-bold mt-3 mb-2">Design Systems That Scale: Best Practices</h3>
-              <p class="text-gray-600 text-sm mb-4">Discover how to build and maintain design systems that grow with your product and team...</p>
-              <a href="#" class="text-purple-600 hover:text-purple-700 font-medium text-sm inline-flex items-center gap-2">
+              <p class="text-gray-400 text-sm mb-4">Discover how to build and maintain design systems that grow with your product and team...</p>
+              <a href="#" class="text-purple-400 hover:text-purple-300 font-medium text-sm inline-flex items-center gap-2">
                 Read More <i class="fas fa-arrow-right"></i>
               </a>
             </div>
           </article>
 
           <!-- Related Post 3 -->
-          <article class="related-card bg-white rounded-2xl overflow-hidden shadow-custom border border-gray-100">
-            <div class="h-48 bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center">
-              <i class="fas fa-code text-5xl text-white/30"></i>
+          <article class="related-card glass-effect rounded-2xl overflow-hidden">
+            <div class="h-48 bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center overflow-hidden">
+              <div class="blog-image w-full h-full flex items-center justify-center">
+                <i class="fas fa-code text-5xl text-white/30"></i>
+              </div>
             </div>
             <div class="p-6">
-              <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-medium">Web Development</span>
+              <span class="glass-effect px-3 py-1 rounded-full text-xs text-purple-400 font-medium">Web Development</span>
               <h3 class="text-xl font-bold mt-3 mb-2">Mastering Modern JavaScript Frameworks</h3>
-              <p class="text-gray-600 text-sm mb-4">A comprehensive guide to choosing and mastering the right JavaScript framework...</p>
-              <a href="#" class="text-purple-600 hover:text-purple-700 font-medium text-sm inline-flex items-center gap-2">
+              <p class="text-gray-400 text-sm mb-4">A comprehensive guide to choosing and mastering the right JavaScript framework...</p>
+              <a href="#" class="text-purple-400 hover:text-purple-300 font-medium text-sm inline-flex items-center gap-2">
                 Read More <i class="fas fa-arrow-right"></i>
               </a>
             </div>
@@ -507,9 +513,42 @@
       </div>
     </section>
 
+    <!-- Newsletter CTA -->
+    <section class="py-16 px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="glass-effect rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10"></div>
+          <div class="relative z-10">
+            <div class="inline-block glass-effect rounded-3xl p-6 mb-6 animate-float">
+              <i class="fas fa-envelope text-4xl gradient-text"></i>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Never Miss an <span class="gradient-text">Update</span>
+            </h2>
+            <p class="text-lg mb-8 text-gray-400 max-w-2xl mx-auto">
+              Subscribe to our newsletter and get the latest web development insights, tutorials, and industry news delivered to your inbox.
+            </p>
+            <div class="max-w-xl mx-auto">
+              <div class="glass-effect rounded-full p-2 flex flex-col sm:flex-row gap-2">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="bg-transparent flex-1 px-6 py-3 focus:outline-none text-white placeholder-gray-500"
+                />
+                <button class="bg-gradient-to-r from-orange-400 to-purple-500 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition whitespace-nowrap">
+                  Subscribe Now
+                </button>
+              </div>
+              <p class="text-gray-500 text-sm mt-4">
+                No spam. Unsubscribe anytime.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-     <!-- Footer -->
+        <!-- Footer -->
     <footer class="border-t border-gray-800 py-8 px-4 pb-24 md:pb-8">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
