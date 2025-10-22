@@ -3,41 +3,172 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | Codevani</title>
+
+    <title>
+      About Codevani | Leading Web & App Development Agency in India
+    </title>
     <meta
       name="description"
-      content="Learn about Codevani - your trusted partner for web development, mobile apps, and digital solutions."
+      content="Discover Codevani – a leading web and mobile app development agency in India. We specialize in custom websites, mobile apps, UI/UX design, SEO, and digital growth strategies that help businesses succeed online."
+    />
+    <meta
+      name="keywords"
+      content="About Codevani, Web Development Company India, Mobile App Development Agency, UI/UX Design, SEO Company, Digital Marketing Agency, Codevani Team"
     />
     <meta name="robots" content="index, follow" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="canonical" href="https://codevani.com/about" />
+    <meta name="theme-color" content="#000" />
+
+    <!-- ✅ Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="About Codevani | Leading Web & App Development Agency in India"
+    />
+    <meta
+      property="og:description"
+      content="Learn about Codevani — your trusted partner for innovative web development, app solutions, and digital marketing."
+    />
+    <meta property="og:url" content="https://codevani.com/about" />
+    <meta property="og:image" content="https://codevani.com/logo.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="About Codevani | Leading Web & App Development Agency in India"
+    />
+    <meta
+      name="twitter:description"
+      content="Codevani helps brands grow through custom web and mobile app development, UI/UX design, and SEO strategies."
+    />
+    <meta name="twitter:image" content="https://codevani.com/logo.png" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-        <!-- Schema JSON-LD -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ✅ Optimized JSON-LD Schema -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Codevani",
-        "url": "https://codevani.com",
-        "logo": "https://codevani.com/assets/img/codevani-logo.svg",
-        "description": "A web and app development agency focused on digital innovation.",
-        "sameAs": [
-          "https://www.facebook.com/codevani",
-          "https://www.instagram.com/codevani",
-          "https://www.linkedin.com/company/codevani"
-        ],
-        "foundingDate": "2015",
-        "founder": { "@type": "Person", "name": "Rajesh Kumar" },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "customer support",
-          "email": "hello@codevani.com"
-        }
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://codevani.com/#organization",
+            "name": "Codevani",
+            "url": "https://codevani.com",
+            "logo": "https://codevani.com/logo.png",
+            "description": "Codevani is a digital agency specializing in web and mobile app development, UI/UX design, SEO, and digital marketing solutions.",
+            "sameAs": [
+              "https://www.facebook.com/codevani",
+              "https://www.instagram.com/codevani_",
+              "https://www.linkedin.com/company/codevani",
+              "https://x.com/codevani_"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-8287940985",
+              "contactType": "Customer Support",
+              "email": "hello@codevani.com",
+              "availableLanguage": ["English", "Hindi"]
+            },
+            "foundingDate": "2015",
+            "founder": {
+              "@type": "Person",
+              "name": "Rajesh Kumar"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://codevani.com/about#webpage",
+            "url": "https://codevani.com/about",
+            "name": "About Codevani",
+            "description": "Learn about Codevani – a trusted web and mobile app development agency empowering businesses through technology and design.",
+            "inLanguage": "en",
+            "isPartOf": { "@id": "https://codevani.com/#website" },
+            "breadcrumb": { "@id": "https://codevani.com/about#breadcrumb" }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://codevani.com/about#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://codevani.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About Us",
+                "item": "https://codevani.com/about"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://codevani.com/#website",
+            "url": "https://codevani.com",
+            "name": "Codevani",
+            "publisher": { "@id": "https://codevani.com/#organization" },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://codevani.com/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What services does Codevani offer?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Codevani offers web development, mobile app development, UI/UX design, SEO, and digital marketing services for businesses worldwide."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is Codevani located?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Codevani is headquartered in Jaipur, Rajasthan, India, serving clients across India and globally."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When was Codevani founded?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Codevani was founded in 2015 with the mission to deliver high-quality web and app development solutions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Codevani work with startups?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we love working with startups and help them scale through custom technology solutions and growth-driven digital strategies."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can I contact Codevani?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can reach us via email at hello@codevani.com or call us at +91-8287940985. We also respond to messages on LinkedIn, Instagram, and X."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
-      <style>
+    <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
       * {
@@ -45,7 +176,8 @@
         margin: 0px;
         box-sizing: border-box;
       }
-      html, body{
+      html,
+      body {
         width: 100%;
         height: 100%;
       }
@@ -131,6 +263,7 @@
       }
     </style>
   </head>
+
   <body class="bg-black text-white overflow-x-hidden">
     <!-- Top Navigation for Desktop -->
     <nav
@@ -752,7 +885,6 @@
       </div>
     </section>
 
-    
     <!-- Call to Action Section -->
     <section class="py-20 px-4 pb-safe">
       <div class="max-w-4xl mx-auto text-center">
@@ -761,7 +893,8 @@
             Ready to Work <span class="gradient-text">Together?</span>
           </h2>
           <p class="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-            Let's transform your ideas into reality. Get in touch with us today and start your digital journey.
+            Let's transform your ideas into reality. Get in touch with us today
+            and start your digital journey.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -780,7 +913,7 @@
         </div>
       </div>
     </section>
-        <!-- Footer -->
+    <!-- Footer -->
     <footer class="border-t border-gray-800 py-8 px-4 pb-24 md:pb-8">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
@@ -852,7 +985,6 @@
       </div>
     </footer>
 
-
     <!-- Bottom Navigation (Mobile) -->
     <nav class="bottom-nav md:hidden glass-effect border-t border-gray-800">
       <div class="flex justify-around items-center py-4 px-2">
@@ -863,8 +995,11 @@
           <i class="fas fa-home text-xl"></i>
           <span class="text-xs">Home</span>
         </a>
-        <a href="projects.html" class="nav-item flex flex-col items-center gap-1">
-         <i class="fa-solid fa-layer-group text-xl"></i>
+        <a
+          href="projects.html"
+          class="nav-item flex flex-col items-center gap-1"
+        >
+          <i class="fa-solid fa-layer-group text-xl"></i>
           <span class="text-xs">Projects</span>
         </a>
         <a href="about.html" class="nav-item flex flex-col items-center gap-1">
@@ -872,16 +1007,18 @@
           <span class="text-xs">About</span>
         </a>
         <a href="blog.html" class="nav-item flex flex-col items-center gap-1">
-         <i class="fa-solid fa-book text-xl"></i>
+          <i class="fa-solid fa-book text-xl"></i>
           <span class="text-xs">Blog</span>
         </a>
-        <a href="contact.html" class="nav-item flex flex-col items-center gap-1">
-         <i class="fa-solid fa-phone text-xl"></i>
+        <a
+          href="contact.html"
+          class="nav-item flex flex-col items-center gap-1"
+        >
+          <i class="fa-solid fa-phone text-xl"></i>
           <span class="text-xs">Contact</span>
         </a>
       </div>
     </nav>
-
 
     <script>
       // Bottom navigation active state
@@ -922,4 +1059,3 @@
     </script>
   </body>
 </html>
-

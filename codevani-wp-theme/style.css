@@ -1,0 +1,322 @@
+/*
+Theme Name: Codevani
+Description: A modern, responsive WordPress theme for web development agencies. Features a dark theme with glass morphism effects, gradient text, and mobile-first design.
+Version: 1.0.0
+Author: Codevani Team
+Author URI: https://codevani.com
+Theme URI: https://codevani.com
+Text Domain: codevani
+Domain Path: /languages
+Requires at least: 5.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: business, portfolio, dark, responsive, modern, agency, web-development
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+/* Reset and Base Styles */
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Article Content Styles */
+.article-content {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #c084fc transparent;
+}
+
+.article-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.article-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.article-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #fbbf77 0%, #c084fc 50%, #a78bfa 100%);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.article-content::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #c084fc 0%, #a78bfa 50%, #fbbf77 100%);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #fbbf77 0%, #c084fc 50%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass Effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Service Cards */
+.service-card {
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Animations */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+.nav-item {
+  transition: all 0.3s ease;
+}
+
+.nav-item.active {
+  color: #fbbf77;
+}
+
+.nav-item:hover {
+  color: #c084fc;
+  transform: translateY(-5px);
+}
+
+/* Safe Padding for Mobile */
+.pb-safe {
+  padding-bottom: 80px;
+}
+
+/* Error Styles */
+.error {
+  color: #ff2929;
+}
+
+/* WordPress Specific Styles */
+.alignleft {
+  float: left;
+  margin-right: 1em;
+}
+
+.alignright {
+  float: right;
+  margin-left: 1em;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  max-width: 100%;
+}
+
+.wp-caption-text {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin-top: 0.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+/* Blog Styles */
+.blog-card {
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-image img {
+  transform: scale(1.05);
+}
+
+/* Team Slider Styles */
+.team-slider {
+  overflow: hidden;
+}
+
+.team-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.team-card {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 1.5rem;
+}
+
+/* Form Styles */
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #c084fc;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .pb-safe {
+    padding-bottom: 0;
+  }
+
+  .bottom-nav {
+    position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  .team-track {
+    animation-duration: 20s;
+  }
+  
+  .team-card {
+    width: 280px;
+  }
+}
+
+/* WordPress Admin Bar Adjustment */
+body.admin-bar .fixed {
+  top: 32px;
+}
+
+@media (max-width: 782px) {
+  body.admin-bar .fixed {
+    top: 46px;
+  }
+}
+
+/* Accessibility */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+/* Print Styles */
+@media print {
+  .bottom-nav,
+  .fixed {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .gradient-text {
+    background: none !important;
+    color: black !important;
+  }
+}

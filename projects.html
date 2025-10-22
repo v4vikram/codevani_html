@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- ✅ Meta Basics -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Projects | Codevani - Showcasing Excellence in Digital Solutions</title>
     <meta
       name="description"
-      content="Explore Codevani's portfolio of successful web development, mobile apps, and digital transformation projects. See how we've helped businesses achieve their goals."
+      content="Discover Codevani's portfolio of web development, mobile apps, and digital solutions. Explore real-world success stories that helped businesses grow online."
     />
-    <meta name="keywords" content="web development projects, mobile app portfolio, UI/UX design showcase, digital solutions, case studies" />
+    <meta
+      name="keywords"
+      content="Codevani projects, web development portfolio, mobile app projects, UI/UX design, digital agency work, case studies, Laravel, React, WordPress"
+    />
     <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://codevani.com/projects" />
+    <meta name="author" content="Codevani" />
+
+    <!-- ✅ Open Graph / Social Preview -->
     <meta property="og:title" content="Our Projects | Codevani Portfolio" />
-    <meta property="og:description" content="Explore our portfolio of successful digital projects and transformations" />
-    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Explore Codevani's portfolio of successful digital projects including web development, mobile apps, and UI/UX design."
+    />
     <meta property="og:url" content="https://codevani.com/projects" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Codevani" />
+    <meta property="og:image" content="https://codevani.com/assets/img/codevani-og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Our Projects | Codevani Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Explore Codevani's best digital projects and client success stories."
+    />
+    <meta name="twitter:image" content="https://codevani.com/assets/img/codevani-og.jpg" />
+
+    <!-- ✅ Theme / Favicon -->
+    <meta name="theme-color" content="#000" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+
+    <!-- ✅ Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-      <script type="application/ld+json">
+
+    <!-- ✅ Structured Data (JSON-LD Schema) -->
+    <script type="application/ld+json">
       [
         {
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": "Codevani",
           "url": "https://codevani.com",
-          "logo": "https://codevani.com/logo.svg",
+          "logo": "https://codevani.com/logo.png",
           "sameAs": [
             "https://www.instagram.com/codevani_",
             "https://www.linkedin.com/in/codenavi-company-4539a338a",
@@ -45,33 +73,19 @@
           "@type": "WebPage",
           "name": "Our Projects | Codevani",
           "url": "https://codevani.com/projects",
-          "description": "Explore Codevani's portfolio of successful web development, mobile apps, and digital transformation projects. See how we've helped businesses achieve their goals.",
+          "description": "Explore Codevani's portfolio of successful web development, mobile app, and digital transformation projects.",
           "inLanguage": "en",
           "isPartOf": {
             "@type": "WebSite",
             "name": "Codevani",
             "url": "https://codevani.com"
           },
-          "primaryImageOfPage": "https://codevani.com/logo.svg",
-          "about": {
-            "@type": "Organization",
-            "name": "Codevani"
-          },
+          "primaryImageOfPage": "https://codevani.com/assets/img/codevani-og.jpg",
           "breadcrumb": {
             "@type": "BreadcrumbList",
             "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://codevani.com"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Projects",
-                "item": "https://codevani.com/projects"
-              }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://codevani.com" },
+              { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://codevani.com/projects" }
             ]
           }
         },
@@ -88,7 +102,7 @@
               "@type": "CreativeWork",
               "position": 1,
               "name": "ShopHub - Modern E-commerce Platform",
-              "description": "A comprehensive e-commerce solution with inventory management, analytics, and seamless payment integration built with React and Node.js.",
+              "description": "A robust e-commerce solution built with React and Node.js, including product management and secure payments.",
               "keywords": "E-commerce, Web Development, React, Node.js",
               "url": "https://codevani.com/projects#shophub"
             },
@@ -96,7 +110,7 @@
               "@type": "CreativeWork",
               "position": 2,
               "name": "HealthTrack Pro",
-              "description": "A health monitoring app with real-time tracking, medication reminders, and doctor consultation features.",
+              "description": "A cross-platform health app with fitness tracking, reminders, and real-time consultations.",
               "keywords": "Mobile App, Healthcare, Java, Angular",
               "url": "https://codevani.com/projects#healthtrack"
             },
@@ -104,8 +118,8 @@
               "@type": "CreativeWork",
               "position": 3,
               "name": "DesignFlow Studio",
-              "description": "Enterprise-grade UI/UX design system with reusable components, style guides, and documentation for teams.",
-              "keywords": "UI/UX, Design System, Figma, React",
+              "description": "A complete UI/UX design system featuring reusable components and team collaboration support.",
+              "keywords": "UI/UX Design, Design System, Figma, React",
               "url": "https://codevani.com/projects#designflow"
             }
           ]
@@ -119,10 +133,7 @@
             "name": "Codevani",
             "url": "https://codevani.com"
           },
-          "areaServed": {
-            "@type": "Country",
-            "name": "India"
-          },
+          "areaServed": { "@type": "Country", "name": "India" },
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Website & App Development Services",
@@ -140,7 +151,7 @@
                 "itemOffered": {
                   "@type": "Service",
                   "name": "Mobile App Development",
-                  "description": "Modern cross-platform mobile apps for Android and iOS."
+                  "description": "Cross-platform mobile apps for Android and iOS with modern UI/UX."
                 }
               },
               {
@@ -153,10 +164,40 @@
               }
             ]
           }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does Codevani approach project development?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We follow a structured process including research, design, development, testing, and post-launch support to ensure the best results for every client."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I see live examples of your work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our Projects page showcases real client case studies and deployed digital solutions across multiple industries."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide maintenance for completed projects?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Codevani offers ongoing maintenance, updates, and performance optimization for all completed web and app projects."
+              }
+            }
+          ]
         }
       ]
     </script>
-    <style>
+      <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
       * {
@@ -287,6 +328,7 @@
       }
     </style>
   </head>
+
   <body class="bg-black text-white overflow-x-hidden">
    
 
